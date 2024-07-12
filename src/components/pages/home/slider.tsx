@@ -44,7 +44,7 @@ export default function HeroSliderPhoto() {
                 <Image
                   src={`/assets/images/${image}.png`}
                   height={80}
-                  width={450}
+                  width={424}
                   alt="swiper images"
                   className="rounded-2xl"
                 />
