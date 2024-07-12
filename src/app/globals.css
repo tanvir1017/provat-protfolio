@@ -32,7 +32,7 @@
 
     /* Custom Color code */
     --indigo-5: hsl(255, 100%, 61%);
-    --indigo-2_5: hsl(257, 97%, 75%);
+    --indigo-2: hsl(257, 97%, 75%);
 
     --offWhite-3: hsl(0 0% 100% / 0.68);
     /* Custom Color code */
@@ -77,7 +77,7 @@
 
 /* Custom css */
 
-.hero__section__afterEffects::after {
+.hero__section__afterEffects::before {
   content: "*";
   position: absolute;
   top: 0;
@@ -107,27 +107,10 @@
   background-image: linear-gradient(
     -264.28deg,
     var(--indigo-5),
-    var(--indigo-2_5)
+    var(--indigo-2)
   );
   /* background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%); */
-  padding: 25px 50px;
-  border-radius: 5px;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden;
 }
-
-/* slider class */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-/* .swiper-slide img {
-  display: block;
-  width: 95%;
-} */
 
 /* slider class */
 
