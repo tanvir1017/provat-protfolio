@@ -1,8 +1,10 @@
+"use client";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { SlidingText } from "./sliding-text";
+import CountUp from "react-countup";
 
 const WhyMe = () => {
   return (
@@ -32,7 +34,10 @@ const WhyMe = () => {
           <div className="bg-white/5 backdrop-blur-sm rounded-xl grid place-items-center">
             <div id="heading--title" className=" text-center">
               <h2 className="text-[5.125rem] text-[#ba92ff] font-semibold">
-                25 +
+                <span>
+                  <CountUp start={0} end={25} />
+                </span>{" "}
+                +
               </h2>
               <p className="text-[#ffffffa8] font-semibold text-lg leading-[2.8125rem] -mt-5">
                 Unique art styles
@@ -42,7 +47,11 @@ const WhyMe = () => {
           <div className="bg-white/5 backdrop-blur-sm rounded-xl grid place-items-center">
             <div id="heading--title" className="text-center">
               <h2 className="text-[5.125rem] text-[#ba92ff] font-semibold">
-                &lt;25m
+                &lt;
+                <span>
+                  <CountUp start={0} end={25} />
+                </span>
+                m
               </h2>
               <p className="text-[#ffffffa8] font-semibold text-lg leading-[2.8125rem] -mt-5">
                 To get results
@@ -52,7 +61,10 @@ const WhyMe = () => {
           <div className="border-[#5c39c7] border-[2px] pt-10 px-9 text-white row-span-2 rounded-xl">
             <div id="heading--title" className="mb-20 mt-10 text-center">
               <h2 className="text-[5.125rem] text-[#ba92ff] font-semibold leading-4 mb-7">
-                150 K+
+                <span>
+                  <CountUp start={0} end={150} />
+                </span>
+                K+
               </h2>
               <p className="text-[#FFFFFF5E] font-semibold text-lg leading-[2.8125rem]">
                 Images generated
