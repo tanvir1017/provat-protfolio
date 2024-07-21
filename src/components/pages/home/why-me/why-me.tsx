@@ -5,10 +5,11 @@ import Link from "next/link";
 import React from "react";
 import { SlidingText } from "./sliding-text";
 import CountUp from "react-countup";
+import * as Theme from "@/components/styled-components/theme";
 
 const WhyMe = () => {
   return (
-    <div className="relative z-10 bg-black after:content-['hello'] after:bg-gradient-to-tr after:from-indigo-500/65 after:to-indigo-800/55 after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:w-[800px] after:h-[800px] after:rounded-full after:blur-[280px] after:-z-10 bg-center bg-cover pb-10">
+    <Theme.PurpleBlurry>
       <div className="container py-10">
         {/* Heading ANd title */}
         <div id="heading--and--title">
@@ -132,7 +133,7 @@ const WhyMe = () => {
         {/* Grid layout */}
       </div>
       <SlidingText />
-    </div>
+    </Theme.PurpleBlurry>
   );
 };
 

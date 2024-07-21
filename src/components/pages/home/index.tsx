@@ -2,6 +2,8 @@ import React from "react";
 import HeroSection from "./hero-section/hero-section";
 import { NavbarWithHome } from "@/components/shared/navbar/navbar";
 import WhyMe from "./why-me/why-me";
+import RecentWork from "./recent-work/cards";
+import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
 
 const Home = () => {
   return (
@@ -17,6 +19,14 @@ const Home = () => {
       {/* Why Me section */}
       <WhyMe />
       {/* Why Me section */}
+
+      {/* Why Me section */}
+      <RecentWork />
+      {/* Why Me section */}
+
+      {/*Plan And Pricing */}
+      <PlanAndPricing />
+      {/*Plan And Pricing */}
     </>
   );
 };
