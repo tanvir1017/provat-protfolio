@@ -42,4 +42,24 @@ const PrimaryButton = ({
   );
 };
 
-export { PurpleBlurry, PrimaryButton };
+// Purple Button without gradient
+const SecondaryButton = ({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) => {
+  return (
+    <Shadcn.Button
+      className={cn(
+        "bg-[var(--indigo-5)] hover:bg-[var(--indigo-5)]  px-14 py-6 rounded-md relative overflow-hidden tracking-wider transition-all duration-300 ease-in-out",
+        className
+      )}
+    >
+      {children}
+    </Shadcn.Button>
+  );
+};
+
+export { PurpleBlurry, PrimaryButton, SecondaryButton };

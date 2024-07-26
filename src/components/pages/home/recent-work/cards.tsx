@@ -8,9 +8,9 @@ import React from "react";
 const RecentWork = () => {
   return (
     <>
-      <Theme.PurpleBlurry className="h-screen border-t">
+      <Theme.PurpleBlurry className="">
         <div className="container py-10">
-          <Button className="bg-white/5 backdrop-blur-sm  m-auto rounded-full px-10 block">
+          <Button className="bg-white/5 backdrop-blur-sm  m-auto rounded-full px-10 block hover:bg-white/5">
             Recent Work
           </Button>
           <h2 className="text-[80px] font-bold text-white text-center">

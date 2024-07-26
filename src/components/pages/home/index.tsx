@@ -4,6 +4,7 @@ import { NavbarWithHome } from "@/components/shared/navbar/navbar";
 import WhyMe from "./why-me/why-me";
 import RecentWork from "./recent-work/cards";
 import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
+import ReviewOrTestimonial from "./review-or-testimonial/review-or-testimonial";
 
 const Home = () => {
   return (
@@ -26,6 +27,10 @@ const Home = () => {
 
       {/*Plan And Pricing */}
       <PlanAndPricing />
+      {/*Plan And Pricing */}
+
+      {/*Plan And Pricing */}
+      <ReviewOrTestimonial />
       {/*Plan And Pricing */}
     </>
   );
