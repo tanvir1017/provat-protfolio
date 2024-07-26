@@ -17,20 +17,22 @@ const RecentWork = () => {
             Where Imagination Meets Reality
           </h2>
           {/* Cards that represent the recent work of Provat */}
-          <div className="grid grid-cols-3 place-items-center py-20">
+          <div className="grid grid-cols-3 place-content-center gap-3 py-20 max-w-6xl m-auto">
             {[...Array(3).keys()].map((i) => {
               return (
                 <div
                   key={i}
-                  className="border border-[#747474a9] h-[26.875rem] w-[26.875rem] rounded-2xl p-1 flex items-center justify-center"
+                  className="recent__work__box rounded-2xl flex items-center justify-center"
                 >
-                  <Image
-                    src={`/assets/images/r${i + 1}.jpg`}
-                    alt="Recent Work Thumbnail"
-                    height={100}
-                    width={400}
-                    className="rounded-lg object-cover"
-                  />
+                  <div className="h-[20rem] w-full rounded-3xl overflow-hidden relative">
+                    <Image
+                      src={`/assets/images/100${40 + (i + 1)}.jpg`}
+                      alt="Recent Work Thumbnail"
+                      fill
+                      objectFit="cover"
+                      // className="object-cover"
+                    />
+                  </div>
                 </div>
               );
             })}

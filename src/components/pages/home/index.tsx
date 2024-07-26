@@ -5,6 +5,7 @@ import WhyMe from "./why-me/why-me";
 import RecentWork from "./recent-work/cards";
 import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
 import ReviewOrTestimonial from "./review-or-testimonial/review-or-testimonial";
+import ContactMe from "./contact/contect-me";
 
 const Home = () => {
   return (
@@ -29,9 +30,13 @@ const Home = () => {
       <PlanAndPricing />
       {/*Plan And Pricing */}
 
-      {/*Plan And Pricing */}
+      {/*Review And Testimonial */}
       <ReviewOrTestimonial />
-      {/*Plan And Pricing */}
+      {/*Review And Testimonial */}
+
+      {/*Contact me */}
+      <ContactMe />
+      {/*Contact me */}
     </>
   );
 };
