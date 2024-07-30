@@ -4,7 +4,7 @@ import ReviewSLider from "./review-slider";
 
 const ReviewOrTestimonial = () => {
   return (
-    <div className="bg-[#0c0c1e] py-10">
+    <div className="bg-[var(--dark-purple)] pt-10">
       {/* Heading ANd title */}
       <div id="heading--and--title">
         <h5 className="uppercase text-[var(--offWhite-3)] text-center text-sm">
@@ -13,7 +13,7 @@ const ReviewOrTestimonial = () => {
       </div>
       {/* Heading ANd title */}
       {/* Review Card */}
-      <div className="px-5  pt-[4.25rem]">
+      <div className="px-5 pt-[4.25rem]">
         <ReviewSLider />
       </div>
 

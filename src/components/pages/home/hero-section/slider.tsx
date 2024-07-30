@@ -1,18 +1,8 @@
 "use client";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
-import { FreeMode, Pagination } from "swiper/modules";
+import React from "react";
+import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import * as Theme from "@/components/styled-components/theme";
 
 export default function HeroSliderPhoto() {
   const swiperSLideImage = [
@@ -24,21 +14,32 @@ export default function HeroSliderPhoto() {
     "10008",
     "10009",
   ];
+  const swiperBreakPoints = {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  };
   return (
     <>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        freeMode={true}
-        loop={true}
-        // pagination={{
-        //   clickable: false,
-        // }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper "
-      >
+      <Theme.S__SLider breakPoints={swiperBreakPoints}>
         <div className="max-w-full">
-          <div className="grid grid-cols-4 gap-x-5">
+          <div className="">
             {swiperSLideImage.map((image) => (
               <SwiperSlide key={image} className="rounded-3xl bg-transparent ">
                 <Image
@@ -52,7 +53,7 @@ export default function HeroSliderPhoto() {
             ))}
           </div>
         </div>
-      </Swiper>
+      </Theme.S__SLider>
     </>
   );
 }

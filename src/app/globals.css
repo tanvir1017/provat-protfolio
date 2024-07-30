@@ -31,10 +31,12 @@
     --chart-5: 27 87% 67%;
 
     /* Custom Color code */
-    --indigo-5: rgb(106, 56, 255);
-    --indigo-2: hsl(257, 97%, 75%);
+    --indigo-5: rgb(98, 46, 253);
+    --indigo-2: rgb(164, 129, 253);
 
-    --offWhite-3: hsl(0 0% 100% / 0.68);
+    --dark-purple: rgb(12, 12, 30);
+
+    --offWhite-3: rgba(255, 255, 255, 0.68);
     /* Custom Color code */
   }
 
@@ -78,7 +80,7 @@
 /* Custom css */
 
 .hero__section__afterEffects::before {
-  content: "*";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -86,20 +88,15 @@
   height: 100%;
   background-image: url(/assets/images/hero-element.png);
   opacity: 5%;
-  background-size: 55%;
+  background-size: 120%;
   z-index: -1;
 }
 .hero__text {
   background-image: linear-gradient(90deg, #f9e483 0%, #ffffff 100%);
-  background-size: cover;
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  display: inline-block;
-  line-height: 6rem;
-  font-weight: 500;
-  text-align: center;
 }
 
 .global__Button__gradient {
@@ -179,9 +176,26 @@
     rgba(108, 58, 255, 1) 0%,
     rgba(28, 10, 62, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c3aff",endColorstr="#1c0a3e",GradientType=1);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c3aff",endColorstr="#1c0a3e",GradientType=1); */
 
   backdrop-filter: blur(2px);
   border-radius: 20px;
   padding: 20px 26px;
+}
+
+/**
+ * Responsive Styles and sizes
+ min: "350px" }, // small mobile
+ min: "481px" }, // mobile
+ min: "700px" }, // tablet
+ min: "1025px" }, // laptop
+ min: "1171px" }, // desktop
+ min: "1361px" }, // desktop lg
+ min: "1561px" }, // desktop xl
+ */
+
+@media only screen and (min-width: 700px) {
+  .hero__section__afterEffects::before {
+    background-size: 55%;
+  }
 }

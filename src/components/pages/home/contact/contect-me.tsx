@@ -46,12 +46,12 @@ const socialConnections: SocialConnection[] = [
 ];
 const ContactMe = () => {
   return (
-    <div className="contact__me__section py-[12rem]">
-      <div className="max-w-4xl m-auto relative">
-        <div className="contact__me__box text-white">
-          <h2 className="text-[3rem] font-semibold leading-[3rem] max-w-2xl">
+    <div className="contact__me__section py-[6rem] lg-min:py-[12rem]">
+      <div className="px-4 lg-min:px-0 lg-min:max-w-4xl m-auto relative">
+        <div className=" text-white">
+          <Theme.SectionTitle className="text-center">
             Designing Success Starts With A conversation, Contact Me
-          </h2>
+          </Theme.SectionTitle>
           <hr className="border-[#616270] my-5" />
           <div className="grid grid-flow-col place-content-center gap-4 pb-14 pt-8">
             {socialConnections.map((socialConnection: SocialConnection) => (
@@ -67,14 +67,16 @@ const ContactMe = () => {
             ))}
           </div>
         </div>
-        <Link
-          href="/contact-me"
-          className="absolute top-2/2 left-1/2 transform -translate-x-1/2 -translate-y-2/2 -mt-10 bg-white/5 p-2 rounded-lg backdrop-blur-md"
-        >
-          <Theme.PrimaryButton className="space-x-3 py-8">
-            <span>Contact me</span> <MoveRight />{" "}
-          </Theme.PrimaryButton>
-        </Link>
+        <div className="grid place-items-center">
+          <Link
+            href="/contact-me"
+            className=" bg-white/5 p-2 rounded-lg backdrop-blur-md"
+          >
+            <Theme.PrimaryButton className="space-x-3 py-8">
+              <span>Contact me</span> <MoveRight />{" "}
+            </Theme.PrimaryButton>
+          </Link>
+        </div>
       </div>
     </div>
   );

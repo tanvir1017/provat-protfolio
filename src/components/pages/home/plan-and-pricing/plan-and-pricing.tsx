@@ -5,21 +5,21 @@ import Image from "next/image";
 const PlanAndPricing = () => {
   return (
     <div className="overflow-hidden ">
-      <div className="relative z-10 bg-black after:content-['hello'] after:bg-gradient-to-tr after:from-indigo-500/65 after:to-indigo-800/55 after:absolute after:top-[50%] after:-right-[200px] after:blur-[280px] after:w-[800px] after:h-[800px] after:rounded-full after:-z-10 bg-center bg-cover pt-10 pb-[6rem]">
+      <div className="relative z-10 bg-[var(--dark-purple)] after:content-[''] after:bg-gradient-to-tr after:from-[var(--indigo-5)] after:to-[var(--indigo-5)] after:absolute after:top-[50%] after:-right-[200px] after:blur-[280px] after:w-[800px] after:h-[800px] after:rounded-full after:-z-10 bg-center bg-cover pt-10 pb-[6rem]">
         {" "}
         {/* Heading ANd title */}
         <div id="heading--and--title">
           <h5 className="uppercase text-[var(--offWhite-3)] text-center text-sm">
             Plan And Pricing
           </h5>
-          <div className="text-white text-5xl text-center space-y-0.5 mt-5 mb-16">
-            <h3 className="font-semibold">Your AI Generation Option</h3>
+          <div className="text-center mt-5 mb-16">
+            <Theme.SectionTitle>Your AI Generation Option</Theme.SectionTitle>
           </div>
         </div>
         {/* Heading ANd title */}
         {/* Card */}
-        <div className="max-w-5xl m-auto ">
-          <div className="grid grid-cols-2 place-items-center gap-5">
+        <div className="sm-max:container lg-min:max-w-5xl m-auto ">
+          <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center gap-5">
             {[...Array(2).keys()].map((index: number) => (
               <div className="grid place-items-center" key={index}>
                 <div className="border-[#2e2e2e] border bg-[#0c0d0d56] px-4 pt-5 pb-16 rounded-[28px] relative overflow-hidden">

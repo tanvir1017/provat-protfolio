@@ -22,7 +22,7 @@ export const reviewArr: ReviewArrType[] = [
   {
     name: "Mark S",
     role: "Photographer",
-    image: "10028",
+    image: "10028_1",
     text: "Provat has been a game-changer for my photography business. I've been able to create stunning images that are both visually appealing and engaging. My clients have been incredibly satisfied with the results, and I'm grateful for the help I've received from Provat.",
   },
 ];
