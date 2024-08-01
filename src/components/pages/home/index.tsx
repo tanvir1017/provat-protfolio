@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "./hero-section/hero-section";
-import { NavbarWithHome } from "@/components/shared/navbar/navbar";
+import { Navbar } from "@/components/shared/navbar/navbar";
 import WhyMe from "./why-me/why-me";
 import RecentWork from "./recent-work/recent-work";
 import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
@@ -14,7 +14,7 @@ const Home = () => {
       {/* Navbar with hero section */}
 
       <Theme.PurpleBlurry className="hero__section__afterEffects overflow-hidden">
-        <NavbarWithHome />
+        <Navbar />
         <HeroSection />
       </Theme.PurpleBlurry>
       {/* Navbar with hero section */}

@@ -36,6 +36,9 @@
 
     --dark-purple: rgb(12, 12, 30);
 
+    --black-shade: rgb(1, 20, 29);
+    --light-black-shade: rgb(0, 40, 52);
+
     --offWhite-3: rgba(255, 255, 255, 0.68);
     /* Custom Color code */
   }
@@ -226,10 +229,10 @@ Swiper pagination bullet
 .swiper-pagination-bullet {
   background-color: #f6ff48 !important;
 }
-
+/* [] after:to-[] */
 .author__image {
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(45deg, slateblue, coral) border-box;
+  background: linear-gradient(#6a3af6, var()) padding-box,
+    linear-gradient(45deg, var(--indio), #4a328d) border-box;
   border: 5px solid transparent;
   border-radius: 50%;
 }

@@ -14,9 +14,9 @@ const ReviewSection = () => {
   return (
     <div
       id="testimonial"
-      className="h-[60vh] bg-[url(/assets/images/people.jpg)] bg-cover bg-no-repeat bg-center relative overflow-hidden"
+      className="lg-min:h-[60vh] h-[40vh] bg-[url(/assets/images/people.jpg)] bg-cover bg-no-repeat bg-center relative overflow-hidden lg-min:py-0"
     >
-      <div className="bg-gradient-to-r to-[#d2e66ea4] from-5% from-[#000000ab]  absolute w-[100%] h-[100%] z-10"></div>
+      <div className="bg-gradient-to-r to-[#d2e66ea4] from-5% from-[#000000ab] absolute w-[100%] h-[100%]"></div>
       {/* Reviews */}
       <div className="flex items-center justify-center h-full ">
         <Swiper
@@ -27,14 +27,16 @@ const ReviewSection = () => {
           loop={true}
           modules={[FreeMode, Pagination, Autoplay, A11y]}
           autoplay={true}
-          className={cn("mySwiper !z-30 h-5/6 w-1/2 overflow-hidden ")}
+          className={cn(
+            "mySwiper !z-30 h-full lg-min:h-5/6 lg-min:w-1/2 overflow-hidden"
+          )}
         >
           {[...Array(3).keys()].map((i: number) => (
             <SwiperSlide key={i} className="cursor-grab">
               <div className="text-white flex items-center !justify-center h-full">
-                <div className="flex flex-col items-center gap-y-10">
-                  <Quote className="h-32 w-32 rotate-180" />
-                  <p className="max-w-4xl text-center text-2xl font-medium italic">
+                <div className="flex flex-col items-center gap-y-6 lg-min:gap-y-10">
+                  <Quote className="h-20 w-20 lg-min:h-32 lg-min:w-32 rotate-180" />
+                  <p className="lg-min:max-w-4xl text-center text-lg lg-min:text-2xl lg-min:font-medium italic">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Tempore vero, esse, delectus at laborum maxime culpa dolorem
                     repellat hic ut in atque, mollitia voluptates inventore illo

@@ -33,7 +33,7 @@ const PlanAndPricing = () => {
                     />
                   </div>
 
-                  <div id="card--text" className="mt-5 text-[#656565]">
+                  <div id="card--text" className="mt-5 text-[#c9c9c9]">
                     <p>
                       Quos eius veniam ipsum ut assumenda delectus distinctio
                       quas quidem earum corporis? itaque quae inventore harum

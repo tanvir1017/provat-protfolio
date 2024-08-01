@@ -8,25 +8,9 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React, { use, useState } from "react";
 
-const Navbar = () => {
-  const pathname = usePathname();
-
+export const Navbar = ({ className }: { className?: string }) => {
   return (
-    <>
-      <header
-        className={`bg-black py-8 ${
-          ["/"].includes(pathname) ? "hidden" : "block"
-        }`}
-      >
-        <NavbarWithoutHome />
-      </header>
-    </>
-  );
-};
-
-export const NavbarWithHome = () => {
-  return (
-    <header className={`pt-8 `}>
+    <header className={cn(`pt-8`, className)}>
       <MobileNavbar />
       <DesktopNavbar />
     </header>
@@ -70,7 +54,7 @@ const MobileNavbar = () => {
       >
         <ul
           className={cn(
-            "space-y-1 text-white child-hover:text-black bg-[var(--dark-purple)] font-medium [&>li:hover]:bg-white [&>li]:px-5 [&>li]:py-2 h-full py-2",
+            "space-y-1 text-white child-hover:text-black bg-[var(--dark-purple)] font-medium [&>li:hover]:bg-white [&>li]:px-5 [&>li]:py-2 h-full py-2 !z-30",
             {
               ["!h:0px"]: showHamburgerMenu,
               ["!h:200px"]: !showHamburgerMenu,
@@ -132,39 +116,3 @@ const DesktopNavbar = () => {
     </nav>
   );
 };
-
-const NavbarWithoutHome = () => {
-  return (
-    <nav className=" container  flex items-center justify-between">
-      <Link href="/">
-        <Image
-          src="/assets/images/virtu.png"
-          height={100}
-          width={150}
-          alt="Brand logo"
-          priority
-        />
-      </Link>
-      <ul className="flex items-center gap-x-6 text-white font-semibold">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/design-service">Design Service</Link>
-        </li>
-        <li>
-          <Link href="/manufacturing-service">Manufacturing Service</Link>
-        </li>
-        <li>
-          <Link href="/contact-me">
-            <Button className="rounded-full bg-white/15 hover:bg-white/15 backdrop-blur-sm  text-white px-14">
-              Contact
-            </Button>
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};
-
-export default Navbar;
