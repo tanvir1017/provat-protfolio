@@ -3,10 +3,10 @@ import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 import * as Shadcn from "../ui/button";
 import { Swiper } from "swiper/react";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import "swiper/css/autoplay";
 
 type ThemeProps = {
@@ -88,9 +88,6 @@ const S__SLider = ({ breakPoints, className, children }: SliderProps) => {
       breakpoints={breakPoints}
       loop={true}
       modules={[FreeMode, Pagination, Autoplay]}
-      // pagination={{
-      //   clickable: false,
-      // }}
       autoplay={true}
       className={cn("mySwiper", className)}
     >

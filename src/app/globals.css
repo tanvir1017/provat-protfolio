@@ -126,7 +126,6 @@
 
 .contact__me__section {
   position: relative;
-  /* height: 100vh; */
   overflow: hidden;
   background: rgb(12, 12, 30);
   background: -moz-linear-gradient(
@@ -198,4 +197,39 @@
   .hero__section__afterEffects::before {
     background-size: 55%;
   }
+}
+
+.contact__heading__txt {
+  background-image: linear-gradient(
+    90deg,
+    var(--indigo-5) 0%,
+    var(--indigo-2) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+/* #testimonial {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.238),
+    rgba(255, 255, 255, 0.474)
+  );
+} */
+
+/* 
+Swiper pagination bullet
+ */
+
+.swiper-pagination-bullet {
+  background-color: #f6ff48 !important;
+}
+
+.author__image {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, slateblue, coral) border-box;
+  border: 5px solid transparent;
+  border-radius: 50%;
 }

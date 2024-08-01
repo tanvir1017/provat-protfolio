@@ -26,7 +26,7 @@ const Navbar = () => {
 
 export const NavbarWithHome = () => {
   return (
-    <header className={`pt-8 sticky top-0`}>
+    <header className={`pt-8 `}>
       <MobileNavbar />
       <DesktopNavbar />
     </header>
