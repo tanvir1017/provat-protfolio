@@ -13,3 +13,10 @@ export type SocialConnection = {
   color?: string;
   bg?: string;
 };
+
+export type ServiceInfoType = {
+  id: number;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};

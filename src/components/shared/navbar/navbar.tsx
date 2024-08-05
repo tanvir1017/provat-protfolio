@@ -10,7 +10,7 @@ import React, { use, useState } from "react";
 
 export const Navbar = ({ className }: { className?: string }) => {
   return (
-    <header className={cn(`pt-8`, className)}>
+    <header className={cn(`pt-8 !z-30`, className)}>
       <MobileNavbar />
       <DesktopNavbar />
     </header>
@@ -45,7 +45,7 @@ const MobileNavbar = () => {
       )}
       <div
         className={cn(
-          "absolute w-full top-10 left-0 z-10 overflow-hidden transition-all duration-300",
+          "absolute w-full top-10 left-0 overflow-hidden transition-all duration-300",
           {
             ["!h-[0px]"]: showHamburgerMenu,
             ["!h-[200px]"]: !showHamburgerMenu,
@@ -54,7 +54,7 @@ const MobileNavbar = () => {
       >
         <ul
           className={cn(
-            "space-y-1 text-white child-hover:text-black bg-[var(--dark-purple)] font-medium [&>li:hover]:bg-white [&>li]:px-5 [&>li]:py-2 h-full py-2 !z-30",
+            "space-y-1 text-white child-hover:text-black bg-[var(--dark-purple)] font-medium [&>li:hover]:bg-white [&>li]:px-5 [&>li]:py-2 h-full py-2",
             {
               ["!h:0px"]: showHamburgerMenu,
               ["!h:200px"]: !showHamburgerMenu,

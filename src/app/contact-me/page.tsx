@@ -9,12 +9,12 @@ const Contact = () => {
     <>
       <div
         id="contact-me-hero"
-        className="relative overflow-hidden bg-[var(--dark-purple)] after:content-[''] after:bg-gradient-to-tr after:from-[#6a3af6] after:to-[#4a328d] after:absolute after:-bottom-[20%] after:-left-[150px]  after:w-[700px] after:h-[800px] after:rounded-[50%] after:rotate-[270deg] after:z-10 after:blur-[150px]"
+        className="relative overflow-hidden bg-[var(--dark-purple)] after:content-[''] after:bg-gradient-to-tr after:from-[#6a3af6] after:to-[#4a328d] after:absolute after:-bottom-[20%] after:-left-[150px]  after:w-[700px] after:h-[800px] after:rounded-[50%] after:rotate-[270deg]  after:blur-[150px]"
       >
-        <Navbar className="!z-20" />
+        <Navbar />
         <HeroSectionContactMe />
       </div>
-      <ReviewSection />
+      {/* <ReviewSection /> */}
       <GetInTouch />
     </>
   );

@@ -9,10 +9,10 @@ import "swiper/css/autoplay";
 const HeroSectionContactMe = () => {
   return (
     <>
-      <div className="w-[120px] h-[120px] bg-[var(--indigo-5)] rounded-full filter blur-[80px] opacity-100 absolute right-0 bottom-0"></div>
-      <div className="container mt-8 lg-min:mt-0">
+      <div className="w-[120px] h-[120px] bg-[var(--indigo-5)] rounded-full blur-[80px] opacity-100 absolute right-0 bottom-0"></div>
+      <div className="container mt-8 lg-min:mt-0 ">
         <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center h-[90vh] ">
-          <div className="author__image !z-20">
+          <div className="author__image z-10">
             <Image
               src="/assets/images/author-.jpg"
               alt=""
@@ -28,7 +28,7 @@ const HeroSectionContactMe = () => {
               className="rounded-full p-2 bg-transparent lg-min:block hidden"
             />
           </div>
-          <div className="author__about text-white !z-20 -mt-20 ">
+          <div className="author__about text-white -mt-20 ">
             <h1 className="contact__heading__txt text-[4.5rem] lg-min:text-[7rem] font-medium">
               masterpiece
             </h1>

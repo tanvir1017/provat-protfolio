@@ -1,5 +1,6 @@
-import { ReviewArrType, SocialConnection } from "@/ts/type";
+import { ReviewArrType, ServiceInfoType, SocialConnection } from "@/ts/type";
 import * as SVGIcon from "@/assets/svg/svg-icons";
+import React from "react";
 
 export const reviewArr: ReviewArrType[] = [
   {
@@ -58,5 +59,36 @@ export const socialConnections: SocialConnection[] = [
     icon: <SVGIcon.Youtube />,
     url: "https://www.youtube.com/provat.dev",
     alt: "Youtube connection of provat || strwave",
+  },
+];
+
+export const serviceInfo: ServiceInfoType[] = [
+  {
+    id: 1,
+    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    title: "Logo Design",
+    description:
+      "perspiciatis delectus ab asperiores? Debitis voluptatum rem vel aspernatur magni quia adipisci id rerum libero tempora eligendi autem quae, quasi, voluptate excepturi aliquam cumque?",
+  },
+  {
+    id: 2,
+    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    title: "NFT Artwork",
+    description:
+      "laborum mollitia ipsa cupiditate nostrum doloribus laboriosam tempora eum libero iste maxime saepe alias!",
+  },
+  {
+    id: 3,
+    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    title: "Esports Team",
+    description:
+      "aliquid explicabo repellendus, incidunt eveniet, facere quae nulla ad nemo rerum vitae voluptatum accusantium tempora Mollitia",
+  },
+  {
+    id: 4,
+    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    title: "Branding",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatum?",
   },
 ];
