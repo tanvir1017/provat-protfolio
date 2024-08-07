@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <>
       <div className="container">
-        <div className="grid place-content-center pt-[50px] sm:pt-[100px] md:pt-[150px] lg:pt-[200px]">
+        <div className="grid place-content-center pt-[50px] sm-min:pt-[100px] md-min:pt-[150px] lg-min:pt-[200px]">
           <div className="grid place-items-center gap-y-6">
             <h1 className="inline-block font-medium text-center bg-cover lg-min:leading-[6rem] leading-[3rem] text-[2.75rem] lg-min:text-[5.75rem] max-w-full lg-min:max-w-3xl hero__text">
               Let's create a masterpiece

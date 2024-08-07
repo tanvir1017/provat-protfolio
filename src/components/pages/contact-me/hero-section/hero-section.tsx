@@ -11,7 +11,7 @@ const HeroSectionContactMe = () => {
     <>
       <div className="w-[120px] h-[120px] bg-[var(--indigo-5)] rounded-full blur-[80px] opacity-100 absolute right-0 bottom-0"></div>
       <div className="container mt-8 lg-min:mt-0 ">
-        <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center h-[90vh] ">
+        <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center h-[90dvh] ">
           <div className="author__image z-10">
             <Image
               src="/assets/images/author-.jpg"
@@ -29,7 +29,7 @@ const HeroSectionContactMe = () => {
             />
           </div>
           <div className="author__about text-white -mt-20 ">
-            <h1 className="contact__heading__txt text-[4.5rem] lg-min:text-[7rem] font-medium">
+            <h1 className="purple_gradient__heading__txt text-[4.5rem] lg-min:text-[7rem] font-medium">
               masterpiece
             </h1>
             <p className="text-lg leading-7 lg-min:leading-10">

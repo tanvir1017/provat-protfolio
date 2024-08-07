@@ -185,24 +185,7 @@
   padding: 20px 26px;
 }
 
-/**
- * Responsive Styles and sizes
- min: "350px" }, // small mobile
- min: "481px" }, // mobile
- min: "700px" }, // tablet
- min: "1025px" }, // laptop
- min: "1171px" }, // desktop
- min: "1361px" }, // desktop lg
- min: "1561px" }, // desktop xl
- */
-
-@media only screen and (min-width: 700px) {
-  .hero__section__afterEffects::before {
-    background-size: 55%;
-  }
-}
-
-.contact__heading__txt {
+.purple_gradient__heading__txt {
   background-image: linear-gradient(
     90deg,
     var(--indigo-5) 0%,
@@ -212,6 +195,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+}
+
+.icon__bg__gradient {
+  background-image: linear-gradient(289.89deg, #dec7ff -23.71%, #5c27fe 96.09%);
 }
 
 /* #testimonial {
@@ -235,4 +222,21 @@ Swiper pagination bullet
     linear-gradient(45deg, var(--indio), #4a328d) border-box;
   border: 5px solid transparent;
   border-radius: 50%;
+}
+
+/**
+ * Responsive Styles and sizes
+ min: "350px" }, // small mobile
+ min: "481px" }, // mobile
+ min: "700px" }, // tablet
+ min: "1025px" }, // laptop
+ min: "1171px" }, // desktop
+ min: "1361px" }, // desktop lg
+ min: "1561px" }, // desktop xl
+ */
+
+@media only screen and (min-width: 700px) {
+  .hero__section__afterEffects::before {
+    background-size: 55%;
+  }
 }

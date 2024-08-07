@@ -68,7 +68,11 @@ const MobileNavbar = () => {
             <Link href="/design-service">Design Service</Link>
           </li>
           <li>
-            <Link href="/manufacturing-service">Manufacturing Service</Link>
+            {/* <Link href="/manufacturing-service">Manufacturing Service</Link> */}
+            <Link href="/design-service">Manufacturing Service</Link>
+          </li>
+          <li>
+            <Link href="/shop">Shop</Link>
           </li>
           <div className="ml-5 !mt-3">
             <Button
@@ -103,7 +107,11 @@ const DesktopNavbar = () => {
           <Link href="/design-service">Design Service</Link>
         </li>
         <li>
-          <Link href="/manufacturing-service">Manufacturing Service</Link>
+          {/* <Link href="/manufacturing-service">Manufacturing Service</Link> */}
+          <Link href="/design-service">Manufacturing Service</Link>
+        </li>
+        <li>
+          <Link href="/shop">Shop</Link>
         </li>
         <li>
           <Link href="/contact-me">

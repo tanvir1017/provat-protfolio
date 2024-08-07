@@ -7,7 +7,7 @@ import React from "react";
 const SendMail = () => {
   return (
     <div id="input-field" className="lg-min:mt-0 mt-10">
-      <div className=" bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] via  to-[var(--light-black-shade)] p-5 rounded-lg border border-gray-100/15 space-y-5">
+      <Theme.CardBg className="p-5 rounded-lg border border-gray-100/15 space-y-5">
         <Input
           type="text"
           placeholder="Your Name"
@@ -30,7 +30,7 @@ const SendMail = () => {
           rows={8}
         />
         <Theme.PrimaryButton>Send Mail</Theme.PrimaryButton>
-      </div>
+      </Theme.CardBg>
     </div>
   );
 };

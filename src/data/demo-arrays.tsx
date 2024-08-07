@@ -65,28 +65,28 @@ export const socialConnections: SocialConnection[] = [
 export const serviceInfo: ServiceInfoType[] = [
   {
     id: 1,
-    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    icon: <SVGIcon.CheckedMark className="w-8 h-8" />,
     title: "Logo Design",
     description:
       "perspiciatis delectus ab asperiores? Debitis voluptatum rem vel aspernatur magni quia adipisci id rerum libero tempora eligendi autem quae, quasi, voluptate excepturi aliquam cumque?",
   },
   {
     id: 2,
-    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    icon: <SVGIcon.Diamond className="w-8 h-8" />,
     title: "NFT Artwork",
     description:
       "laborum mollitia ipsa cupiditate nostrum doloribus laboriosam tempora eum libero iste maxime saepe alias!",
   },
   {
     id: 3,
-    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    icon: <SVGIcon.TaskBar className="w-8 h-8" />,
     title: "Esports Team",
     description:
       "aliquid explicabo repellendus, incidunt eveniet, facere quae nulla ad nemo rerum vitae voluptatum accusantium tempora Mollitia",
   },
   {
     id: 4,
-    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    icon: <SVGIcon.Home className="w-8 h-8" />,
     title: "Branding",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatum?",

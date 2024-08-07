@@ -22,7 +22,7 @@ const PlanAndPricing = () => {
           <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center gap-5">
             {[...Array(2).keys()].map((index: number) => (
               <div className="grid place-items-center" key={index}>
-                <div className="border-[#2e2e2e] border bg-[#0c0d0d56] px-4 pt-5 pb-16 rounded-[28px] relative overflow-hidden">
+                <Theme.CardBg className="border-[#2e2e2e] border px-4 pt-5 pb-16 rounded-[28px] relative overflow-hidden">
                   <div id="card--image" className="">
                     <Image
                       src="/assets/images/t-shirt.png"
@@ -41,7 +41,7 @@ const PlanAndPricing = () => {
                       maxime.
                     </p>
                   </div>
-                </div>
+                </Theme.CardBg>
                 <Theme.SecondaryButton className="-mt-5 py-7">
                   Use for free
                 </Theme.SecondaryButton>

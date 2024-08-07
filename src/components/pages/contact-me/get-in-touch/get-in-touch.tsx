@@ -14,7 +14,7 @@ const GetInTouch = () => {
           <div id="get-in-touch">
             <h2 className="text-white text-[2rem] lg-min:text-[3rem] lg-min:max-w-2xl max-w-full leading-snug font-semibold ">
               Get In Touch And Let's Collaborate With{" "}
-              <span className="text-[var(--indigo-5)]">Artifice</span>
+              <span className="purple_gradient__heading__txt">Artifice</span>
             </h2>
             <div className="grid grid-cols-1 lg-min:grid-cols-2 text-white gap-2 pt-10">
               <div className="lg-min:col-span-2 bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] via  to-[var(--light-black-shade)] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15">

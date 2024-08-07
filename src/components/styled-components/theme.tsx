@@ -8,22 +8,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-
-type ThemeProps = {
-  className?: string;
-  children?: ReactNode;
-};
-
-interface breakPoints {
-  breakPoints?: {
-    [key: number]: {
-      slidesPerView: number;
-      spaceBetween: number;
-    };
-  };
-}
-
-type SliderProps = ThemeProps & breakPoints;
+import { SliderProps, ThemeProps } from "@/ts/type";
 
 // Used as background for matching the theme context
 const PurpleBlurry = ({ children, className }: ThemeProps) => {
@@ -95,10 +80,25 @@ const S__SLider = ({ breakPoints, className, children }: SliderProps) => {
     </Swiper>
   );
 };
+
+const CardBg = ({ className, children }: ThemeProps) => {
+  return (
+    <div
+      className={cn(
+        "bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] via to-[var(--light-black-shade)]",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+};
+
 export {
   PurpleBlurry,
   PrimaryButton,
   SecondaryButton,
   SectionTitle,
   S__SLider,
+  CardBg,
 };

@@ -14,7 +14,7 @@ const ReviewSection = () => {
   return (
     <div
       id="testimonial"
-      className="lg-min:h-[60vh] h-[40vh] bg-[url(/assets/images/people.jpg)] bg-cover bg-no-repeat bg-center relative overflow-hidden lg-min:py-0"
+      className="lg-min:h-[60dvh] h-[40dvh] bg-[url(/assets/images/people.jpg)] bg-cover bg-no-repeat bg-center relative overflow-hidden lg-min:py-0"
     >
       <div className="bg-gradient-to-r to-[#d2e66ea4] from-5% from-[#000000ab] absolute w-[100%] h-[100%]"></div>
       {/* Reviews */}

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type ReviewArrType = {
   name: string;
   role: string;
@@ -20,3 +22,19 @@ export type ServiceInfoType = {
   title: string;
   description: string;
 };
+
+export type ThemeProps = {
+  className?: string;
+  children?: ReactNode;
+};
+
+export interface breakPoints {
+  breakPoints?: {
+    [key: number]: {
+      slidesPerView: number;
+      spaceBetween: number;
+    };
+  };
+}
+
+export type SliderProps = ThemeProps & breakPoints;
