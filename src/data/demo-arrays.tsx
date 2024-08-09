@@ -68,27 +68,27 @@ export const serviceInfo: ServiceInfoType[] = [
     icon: <SVGIcon.CheckedMark className="w-8 h-8" />,
     title: "Logo Design",
     description:
-      "perspiciatis delectus ab asperiores? Debitis voluptatum rem vel aspernatur magni quia adipisci id rerum libero tempora eligendi autem quae, quasi, voluptate excepturi aliquam cumque?",
+      "SamX delivered beyond expectations! Our new logo perfectly captures the essence of our brand. — Amanda K., Startup Founder",
   },
   {
     id: 2,
     icon: <SVGIcon.Diamond className="w-8 h-8" />,
     title: "NFT Artwork",
     description:
-      "laborum mollitia ipsa cupiditate nostrum doloribus laboriosam tempora eum libero iste maxime saepe alias!",
+      "Collaborating was seamless, and the end result exceeded our expectations. Truly a visionary in the NFT space! -Michael C (NFT Enthusiasts)",
   },
   {
     id: 3,
     icon: <SVGIcon.TaskBar className="w-8 h-8" />,
     title: "Esports Team",
     description:
-      "aliquid explicabo repellendus, incidunt eveniet, facere quae nulla ad nemo rerum vitae voluptatum accusantium tempora Mollitia",
+      "SamX brought our team's vision to life! The graphics for our esports team are not just visually stunning but also cohesive. -Angstygurl",
   },
   {
     id: 4,
     icon: <SVGIcon.Home className="w-8 h-8" />,
     title: "Branding",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatum?",
+      "Exceptional creativity and professionalism! SamX transformed our ideas into a visually striking marketing campaign. — Sarah B",
   },
 ];

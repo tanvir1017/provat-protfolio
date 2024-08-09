@@ -111,6 +111,28 @@
   );
 }
 
+/* Grid Layout */
+/* .why__me-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.why__me-grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.image__generated__box {
+  grid-column: 3;
+
+ grid-row-start: 1;
+  grid-row-end: 3; 
+  grid-row: 1 / 3;
+}
+ */
+
+/* Grid Layout */
+
 .recent__work__box {
   background: linear-gradient(
     89.96deg,
@@ -118,13 +140,6 @@
     rgba(255, 255, 255, 0.008) 49.67%,
     rgba(255, 255, 255, 0.05) 99.96%
   );
-  backdrop-filter: blur(4px);
-  padding: 14px;
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  height: 351px;
-  border-radius: 20px;
-  overflow: hidden;
 }
 
 .contact__me__section {

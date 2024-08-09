@@ -8,26 +8,26 @@ import SpecializedCards from "./specialized-cards";
 const Specialized = () => {
   return (
     <>
-      <div className="bg-[var(--dark-purple)]">
+      <div className="bg-[var(--dark-purple)] pt-10 lg-min:pt-0">
         <div className="container">
           <div>
-            <Button className="bg-white/5 backdrop-blur-sm m-auto rounded-full px-10 hover:bg-white/5 grid place-content-center">
+            <Button className="lg-min:bg-white/5 bg-black/45 backdrop-blur-sm m-auto rounded-full px-10 hover:bg-white/5 grid place-content-center">
               <p className="purple_gradient__heading__txt text-center text-xl">
                 Specialized In
               </p>
             </Button>
           </div>
           {/* Services Card */}
-          <div className="grid grid-cols-1 lg-min:grid-cols-4 gap-5 lg-min:pt-32">
+          <div className="grid grid-cols-1 lg-min:grid-cols-4 gap-14 lg-min:gap-5 pt-28 lg-min:pt-32">
             {serviceInfo.map((service: ServiceInfoType) => (
-              <div key={service.id} className=" relative isolate">
+              <div key={service.id} className="relative isolate h-[250px]">
                 <Button
                   size={"icon"}
                   className="icon__bg__gradient rounded-full h-24 w-24 m-auto flex items-center justify-center absolute -top-2/4 left-1/2 -translate-x-1/2 translate-y-3/4 z-10"
                 >
                   {service.icon}
                 </Button>
-                <div className="bg-black/65 backdrop-blur-md px-4 pb-8 rounded-3xl text-center text-white border border-slate-700 border-opacity-50 h-full">
+                <div className="bg-black/65 backdrop-blur-md px-4 pb-8 rounded-3xl text-center text-white border border-slate-700 border-opacity-50 h-full xs:[mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
                   <h2 className="font-semibold text-3xl pb-2.5 pt-14">
                     {service.title}
                   </h2>
@@ -44,7 +44,7 @@ const Specialized = () => {
           <SpecializedCards />
 
           {/* Descriptive Text */}
-          <div className="py-10 lg-min:pt-8">
+          <div className="pb-5 px-4">
             <div className="max-w-full lg-min:max-w-6xl m-auto isolate z-0  bg-black/30 backdrop-blur-sm px-5 py-10 rounded-2xl border border-slate-700">
               <p className="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

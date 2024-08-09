@@ -19,7 +19,7 @@ const config = {
       "2xl-min": { min: "1361px" }, // desktop lg
       "3xl-min": { min: "1561px" }, // desktop xl
 
-      xss: { max: "349px" },
+      xss: { max: "320px" },
       "xs-max": { max: "480px" }, // small mobile
       "sm-max": { max: "699px" }, // mobile
       "md-max": { max: "1024px" }, // tablet
@@ -29,7 +29,7 @@ const config = {
       "3xl-max": { max: "1700px" }, // desktop xl
       "custom-1231": { max: "1231px" },
 
-      xs: { min: "350px", max: "480px" },
+      xs: { min: "320px", max: "480px" },
       sm: { min: "481px", max: "699px" },
       md: { min: "700px", max: "1024px" },
       lg: { min: "1025px", max: "1170px" },

@@ -35,21 +35,21 @@ const HeroSection = () => {
           </h5>
 
           <div className="grid grid-cols-3 lg-min:grid-cols-5 gap-x-5 gap-y-2 lg-min:gap-y-0 lg-min:gap-x-16 place-items-center  ">
-            {brandImageArray.map((image, i) => (
+            {brandImageArray.map((image) => (
               <>
                 <Image
-                  key={i + 1}
                   src={`/assets/images/${image}.png`}
                   height={100}
                   width={130}
+                  priority
                   alt="Brand that I've work with"
                   className="opacity-70 hover:opacity-100 lg-min:block hidden"
                 />
                 <Image
-                  key={i + 1}
                   src={`/assets/images/${image}.png`}
                   height={100}
                   width={80}
+                  priority
                   alt="Brand that I've work with"
                   className="opacity-70 hover:opacity-100 lg-min:hidden block "
                 />
