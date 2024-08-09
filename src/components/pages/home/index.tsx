@@ -14,7 +14,7 @@ const Home = () => {
       {/* Navbar with hero section */}
 
       <Theme.PurpleBlurry className="hero__section__afterEffects overflow-hidden">
-        <Navbar />
+        {/* <Navbar /> */}
         <HeroSection />
       </Theme.PurpleBlurry>
       {/* Navbar with hero section */}

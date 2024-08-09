@@ -9,11 +9,11 @@ const ContactMe = () => {
   return (
     <div className="contact__me__section py-[6rem] lg-min:py-[12rem]">
       <div className="px-4 lg-min:px-0 lg-min:max-w-4xl m-auto relative">
-        <div className=" text-white">
-          <Theme.SectionTitle className="text-center">
-            Designing Success Starts With A conversation, Contact Me
+        <div className="text-white">
+          <Theme.SectionTitle className="text-center text-[25px] lg-min:text-5xl  ">
+            Lets start your project with us today
           </Theme.SectionTitle>
-          <hr className="border-[#616270] my-5" />
+          <hr className="border-[#616270] my-6 lg-min:my-8 " />
           <div className="grid grid-flow-col place-content-center gap-4 pb-14 pt-8">
             {socialConnections.map((socialConnection: SocialConnection) => (
               <a
@@ -31,9 +31,9 @@ const ContactMe = () => {
         <div className="grid place-items-center">
           <Link
             href="/contact-me"
-            className=" bg-white/5 p-2 rounded-lg backdrop-blur-md"
+            className=" bg-white/5 p-1.5 backdrop-blur-md rounded-full"
           >
-            <Theme.PrimaryButton className="space-x-3 py-8">
+            <Theme.PrimaryButton className="space-x-3 py-6 lg-min:py-8 rounded-full">
               <span>Contact me</span> <MoveRight />{" "}
             </Theme.PrimaryButton>
           </Link>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { DevUiNavbar } from "@/components/shared/navbar/devui-navbar";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -17,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        {/* <Navbar /> */}
-        {children}
+        <DevUiNavbar />
+        <div className="lg-min:-mt-20 -mt-24">{children}</div>
       </body>
     </html>
   );

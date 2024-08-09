@@ -1,6 +1,8 @@
 import React from "react";
 import * as Theme from "@/components/styled-components/theme";
 import Image from "next/image";
+import Link from "next/link";
+import { MoveRight } from "lucide-react";
 
 const PlanAndPricing = () => {
   return (
@@ -10,10 +12,10 @@ const PlanAndPricing = () => {
         {/* Heading ANd title */}
         <div id="heading--and--title">
           <h5 className="uppercase text-[var(--offWhite-3)] text-center text-sm">
-            Plan And Pricing
+            Service
           </h5>
           <div className="text-center mt-5 mb-16">
-            <Theme.SectionTitle>Your AI Generation Option</Theme.SectionTitle>
+            <Theme.SectionTitle>Discover your Desire</Theme.SectionTitle>
           </div>
         </div>
         {/* Heading ANd title */}
@@ -35,16 +37,17 @@ const PlanAndPricing = () => {
 
                   <div id="card--text" className="mt-5 text-[#c9c9c9]">
                     <p>
-                      Quos eius veniam ipsum ut assumenda delectus distinctio
-                      quas quidem earum corporis? itaque quae inventore harum
-                      placeat consequuntur ea voluptas quis, dicta est animi sit
-                      maxime.
+                      {Number(!index) == 0
+                        ? "Our excellence is reflected in our use of high-grade materials and Premium Fabric collection."
+                        : "we combine creativity with precision to deliver designs that stand out and perform."}
                     </p>
                   </div>
                 </Theme.CardBg>
-                <Theme.SecondaryButton className="-mt-5 py-7">
-                  Use for free
-                </Theme.SecondaryButton>
+                <Link href="/shop">
+                  <Theme.SecondaryButton className="-mt-5 py-7 space-x-3">
+                    <span>Check Out</span> <MoveRight />
+                  </Theme.SecondaryButton>
+                </Link>
               </div>
             ))}
           </div>

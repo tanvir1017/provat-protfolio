@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { serviceInfo } from "@/data/demo-arrays";
 import { ServiceInfoType } from "@/ts/type";
 import React from "react";
-import SpecializedCard from "./specialized-card";
 import SpecializedCards from "./specialized-cards";
 
 const Specialized = () => {
