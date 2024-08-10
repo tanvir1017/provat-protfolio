@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import * as Theme from "@/components/styled-components/theme";
 import Image from "next/image";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const PlanAndPricing = () => {
   return (
@@ -11,12 +13,24 @@ const PlanAndPricing = () => {
         {" "}
         {/* Heading ANd title */}
         <div id="heading--and--title">
-          <h5 className="uppercase text-[var(--offWhite-3)] text-center text-sm">
+          <motion.h5
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="uppercase text-[var(--offWhite-3)] text-center text-sm"
+          >
             Service
-          </h5>
-          <div className="text-center mt-5 mb-16">
+          </motion.h5>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 10 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mt-5 mb-16"
+          >
             <Theme.SectionTitle>Discover your Desire</Theme.SectionTitle>
-          </div>
+          </motion.div>
         </div>
         {/* Heading ANd title */}
         {/* Card */}

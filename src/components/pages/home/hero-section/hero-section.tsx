@@ -4,30 +4,53 @@ import Image from "next/image";
 import React from "react";
 import HeroSliderPhoto from "./slider";
 import { useRouter } from "next/navigation";
+import { motion, useReducedMotion } from "framer-motion";
 
 const HeroSection = () => {
   const brandImageArray = ["10011", "10012", "10014", "10015", "10017"];
   const router = useRouter();
 
+  const shouldReduceMotion = useReducedMotion();
+  const childVariants = {
+    initial: { opacity: 0, y: shouldReduceMotion ? 0 : 25 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <>
       <div className="container lg-min:pt-[12.585rem] pt-[200px]">
         <div className="grid place-content-center">
-          <div className="grid place-items-center gap-y-3 lg-min:gap-y-6 isolate z-0">
-            <h1 className="inline-block font-medium text-center bg-cover lg-min:leading-[6rem] leading-[2rem] text-[1.7rem] lg-min:text-[5.75rem] max-w-full lg-min:max-w-5xl hero__text py-2.5">
+          <motion.div
+            initial="initial"
+            animate="visible"
+            variants={{
+              initial: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+            }}
+            className="grid place-items-center gap-y-3 lg-min:gap-y-6 isolate z-0"
+          >
+            <motion.h1
+              variants={childVariants}
+              className="inline-block font-medium text-center bg-cover lg-min:leading-[6rem] leading-[2rem] text-[1.7rem] lg-min:text-[5.75rem] max-w-full lg-min:max-w-5xl hero__text py-2.5"
+            >
               Finest Jersey Design and Manufacturing solution
-            </h1>
-            <h6 className="text-[#ffffffb5] max-w-md text-center font-light lg-min:font-normal">
+            </motion.h1>
+            <motion.h6
+              variants={childVariants}
+              className="text-[#ffffffb5] max-w-md text-center font-light lg-min:font-normal"
+            >
               Whether you're a sports team, an organization or a company we're
               here to provide superior service.
-            </h6>
-            <Button
-              onClick={() => router.push("/contact-me")}
-              className="global__Button__gradient px-10 py-2 lg-min:px-14 lg-min:py-6 rounded-full relative overflow-hidden tracking-wider transition-all duration-300 ease-in-out"
-            >
-              Start Now
-            </Button>
-          </div>
+            </motion.h6>
+            <motion.div variants={childVariants}>
+              <Button
+                onClick={() => router.push("/contact-me")}
+                className="global__Button__gradient px-10 py-2 lg-min:px-14 lg-min:py-6 rounded-full relative overflow-hidden tracking-wider transition-all duration-300 ease-in-out"
+              >
+                Start Now
+              </Button>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 

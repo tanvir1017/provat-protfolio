@@ -1,21 +1,37 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { serviceInfo } from "@/data/demo-arrays";
 import { ServiceInfoType } from "@/ts/type";
+import { motion, useReducedMotion } from "framer-motion";
 import React from "react";
 import SpecializedCards from "./specialized-cards";
 
 const Specialized = () => {
+  const shouldReduceMotion = useReducedMotion();
+  const childVariants = {
+    initial: { opacity: 0, y: shouldReduceMotion ? 0 : 25 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
   return (
     <>
       <div className="bg-[var(--dark-purple)] pt-10 lg-min:pt-0">
         <div className="container">
-          <div>
-            <Button className="lg-min:bg-white/5 bg-black/45 backdrop-blur-sm m-auto rounded-full px-10 hover:bg-white/5 grid place-content-center">
-              <p className="purple_gradient__heading__txt text-center text-xl">
-                Specialized In
-              </p>
-            </Button>
-          </div>
+          <motion.div
+            initial="initial"
+            animate="visible"
+            variants={{
+              initial: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+            }}
+          >
+            <motion.div variants={childVariants}>
+              <Button className="lg-min:bg-white/5 bg-black/45 backdrop-blur-sm m-auto rounded-full px-10 hover:bg-white/5 grid place-content-center">
+                <p className="purple_gradient__heading__txt text-center text-xl">
+                  Specialized In
+                </p>
+              </Button>
+            </motion.div>
+          </motion.div>
           {/* Services Card */}
           <div className="grid grid-cols-1 lg-min:grid-cols-4 gap-14 lg-min:gap-5 pt-28 lg-min:pt-32">
             {serviceInfo.map((service: ServiceInfoType) => (

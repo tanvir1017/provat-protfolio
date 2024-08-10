@@ -1,11 +1,12 @@
 "use client";
-import { ChevronRight } from "lucide-react";
+
 import Image from "next/image";
-import Link from "next/link";
+
 import React from "react";
 import { SlidingText } from "./sliding-text";
 import CountUp from "react-countup";
 import * as Theme from "@/components/styled-components/theme";
+import { motion } from "framer-motion";
 
 const WhyMe = () => {
   return (
@@ -14,14 +15,26 @@ const WhyMe = () => {
         <div className="container py-10">
           {/* Heading ANd title */}
           <div id="heading--and--title">
-            <h5 className="uppercase text-[var(--offWhite-3)] text-center text-sm">
+            <motion.h5
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="uppercase text-[var(--offWhite-3)] text-center text-sm"
+            >
               Why Us?
-            </h5>
+            </motion.h5>
 
-            <h3 className="text-white text-2xl lg-min:text-5xl text-center mt-5 mb-16 font-medium lg-min:font-semibold max-w-4xl m-auto !leading-tight">
+            <motion.h3
+              initial={{ opacity: 0, y: 0 }}
+              whileInView={{ opacity: 1, y: 10 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-white text-2xl lg-min:text-5xl text-center mt-5 mb-16 font-medium lg-min:font-semibold max-w-4xl m-auto !leading-tight"
+            >
               From premium design to high-quality fabrics, our experienced team
               ensures every jersey meets your expectations.
-            </h3>
+            </motion.h3>
           </div>
           {/* Heading ANd title */}
 
@@ -32,36 +45,65 @@ const WhyMe = () => {
             {/* column 1 */}
             <div className="bg-white/5 backdrop-blur-sm rounded-xl py-10 lg-min:py-0 grid place-items-center">
               <div id="heading--title" className=" text-center">
-                <h2 className="text-[5.125rem] text-[#ba92ff] font-semibold">
+                <motion.h2
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[5.125rem] text-[#ba92ff] font-semibold"
+                >
                   <span>
                     <CountUp start={0} end={20} />
                   </span>
                   +
-                </h2>
-                <p className="text-[#ffffffa8] font-semibold text-lg leading-[2.8125rem] -mt-5">
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 0 }}
+                  whileInView={{ opacity: 1, y: 10 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[#ffffffa8] font-semibold text-lg leading-[2.8125rem] -mt-5"
+                >
                   Brand Endorsement
-                </p>
+                </motion.p>
               </div>
             </div>
             {/* column 2 */}
             <div className="bg-white/5 backdrop-blur-sm rounded-xl py-10 lg-min:py-0 grid place-items-center ">
               <div id="heading--title" className="text-center">
-                <h2 className="text-[5.125rem] text-[#ba92ff] font-semibold">
-                  {/* &lt; */}
+                <motion.h2
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[5.125rem] text-[#ba92ff] font-semibold"
+                >
                   <span>
                     <CountUp start={0} end={98} />%
                   </span>
-                </h2>
-                <p className="text-[#ffffffa8] font-semibold text-lg leading-[2.8125rem] -mt-5">
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 0 }}
+                  whileInView={{ opacity: 1, y: 10 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[#ffffffa8] font-semibold text-lg leading-[2.8125rem] -mt-5"
+                >
                   Client satisfaction
-                </p>
+                </motion.p>
               </div>
             </div>
             {/* column 3 */}
             <div className="lg-min:col-span-2 py-16 lg-min:py-20 bg-[url('/assets/images/10029.png')] bg-cover bg-no-repeat bg-right-bottom rounded-xl relative overflow-hidden  after:content[''] after:absolute after:w-full after:h-full after:bg-[#0000007a] after:z-10 grid place-items-center">
-              <h2 className="text-white text-3xl lg-min:text-5xl font-semibold max-w-2/3  lg-min:max-w-xl text-center z-20">
+              <motion.h2
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="text-white text-3xl lg-min:text-5xl font-semibold max-w-2/3  lg-min:max-w-xl text-center z-20"
+              >
                 Modern Design Ideas & Resources
-              </h2>
+              </motion.h2>
             </div>
             {/* column 4 */}
             <div className="bg-white/5 backdrop-blur-sm rounded-xl ">
@@ -69,22 +111,25 @@ const WhyMe = () => {
                 id="heading--title"
                 className="p-10 space-y-2 lg-min:space-y-6"
               >
-                <h2 className="text-2xl lg-min:text-[2.5625rem] text-white font-medium max-w-xs leading-[1.2em]">
+                <motion.h2
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-2xl lg-min:text-[2.5625rem] text-white font-medium max-w-xs leading-[1.2em]"
+                >
                   Cost-Effectiveness
-                </h2>
-                <p className="text-[#ffffffa8] text-[18px] leading-[1.7rem] font-light">
-                  t's a cost-effective solution, particularly for sports teams
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[#ffffffa8] text-[18px] leading-[1.7rem] font-light"
+                >
+                  it's a cost-effective solution, particularly for sports teams
                   and clothing businesses with limited budgets.
-                </p>
-                {/* <div>
-                  <Link
-                    href={"/"}
-                    className="text-[#ba92ff] font-semibold inline-flex items-center group"
-                  >
-                    Discover{" "}
-                    <ChevronRight className="group-hover:transform transition-all group-hover:translate-x-1 " />
-                  </Link>
-                </div> */}
+                </motion.p>
               </div>
             </div>
             {/* column 5 */}
@@ -100,15 +145,27 @@ const WhyMe = () => {
             {/* column 6 */}
             <div className="image__generated__box lg-min:col-start-3 lg-min:row-start-1 lg-min:row-end-3  border-[#5c39c7] border-[2px] pt-10 px-9 text-white rounded-xl">
               <div id="heading--title" className="mb-20 mt-10 text-center">
-                <h2 className="text-[5.125rem] text-[#ba92ff] font-semibold leading-4 mb-7">
+                <motion.h2
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[5.125rem] text-[#ba92ff] font-semibold leading-4 mb-7"
+                >
                   <span>
                     <CountUp start={0} end={250} />
                   </span>
                   +
-                </h2>
-                <p className="text-[#FFFFFF5E] font-semibold text-lg leading-[2.8125rem]">
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 0 }}
+                  whileInView={{ opacity: 1, y: 10 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-[#FFFFFF5E] font-semibold text-lg leading-[2.8125rem]"
+                >
                   Projects completed
-                </p>
+                </motion.p>
               </div>
               <Image
                 height={100}

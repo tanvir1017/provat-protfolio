@@ -1,10 +1,10 @@
+"use client";
 import * as Theme from "@/components/styled-components/theme";
 import { Button } from "@/components/ui/button";
-
 import { PlayIcon } from "lucide-react";
-import Image from "next/image";
 import React from "react";
 import ProjectCard from "./project-card";
+import { motion } from "framer-motion";
 
 const RecentWork = () => {
   return (
@@ -15,11 +15,17 @@ const RecentWork = () => {
             Recent Work
           </Button>
 
-          <div className="text-center mt-5 mb-0 lg-min:mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mt-5 mb-0 lg-min:mb-16"
+          >
             <Theme.SectionTitle>
               Where Imagination Meets Reality
             </Theme.SectionTitle>
-          </div>
+          </motion.div>
           {/* Cards that represent the recent work of Provat */}
           <div className="grid grid-cols-1 lg-min:grid-cols-3 place-content-center gap-3 py-10 lg-min:pt-5  max-w-full lg-min:max-w-6xl m-auto">
             {[...Array(3).keys()].map((project) => (
@@ -27,9 +33,9 @@ const RecentWork = () => {
             ))}
           </div>
 
-          <div className="text-center lg-min:pb-20">
+          <motion.div className="text-center lg-min:pb-20">
             <Theme.PrimaryButton>check Out Portfolio!</Theme.PrimaryButton>
-          </div>
+          </motion.div>
         </div>
       </Theme.PurpleBlurry>
 

@@ -1,7 +1,9 @@
+"use client";
 import * as Theme from "@/components/styled-components/theme";
 import { socialConnections } from "@/data/demo-arrays";
 import { SocialConnection } from "@/ts/type";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
@@ -10,8 +12,15 @@ const ContactMe = () => {
     <div className="contact__me__section py-[6rem] lg-min:py-[12rem]">
       <div className="px-4 lg-min:px-0 lg-min:max-w-4xl m-auto relative">
         <div className="text-white">
-          <Theme.SectionTitle className="text-center text-[25px] lg-min:text-5xl  ">
-            Lets start your project with us today
+          <Theme.SectionTitle className="text-center text-[25px] lg-min:text-5xl">
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              Lets start your project with us today
+            </motion.div>
           </Theme.SectionTitle>
           <hr className="border-[#616270] my-6 lg-min:my-8 " />
           <div className="grid grid-flow-col place-content-center gap-4 pb-14 pt-8">
