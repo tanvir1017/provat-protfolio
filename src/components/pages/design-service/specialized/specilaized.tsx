@@ -60,7 +60,7 @@ const Specialized = () => {
 
           {/* Descriptive Text */}
           <div className="pb-5 px-4">
-            <div className="max-w-full lg-min:max-w-6xl m-auto isolate z-0  bg-black/30 backdrop-blur-sm px-5 py-10 rounded-2xl border border-slate-700">
+            <div className="max-w-full lg-min:max-w-6xl m-auto isolate z-0 py-10 rounded-2xl">
               <p className="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident fuga, rerum repudiandae nulla dolore optio! Omnis

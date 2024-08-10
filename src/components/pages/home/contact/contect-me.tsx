@@ -9,7 +9,7 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <div className="contact__me__section py-[6rem] lg-min:py-[12rem]">
+    <div className="contact__me__section py-[6rem] lg-min:py-[12rem] -mt-1">
       <div className="px-4 lg-min:px-0 lg-min:max-w-4xl m-auto relative">
         <div className="text-white">
           <Theme.SectionTitle className="text-center text-[25px] lg-min:text-5xl">
@@ -19,7 +19,7 @@ const ContactMe = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Lets start your project with us today
+              Start your project with us Now
             </motion.div>
           </Theme.SectionTitle>
           <hr className="border-[#616270] my-6 lg-min:my-8 " />

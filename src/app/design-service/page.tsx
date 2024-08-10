@@ -1,6 +1,13 @@
 import HeroSectionDesignService from "@/components/pages/design-service/hero-section/hero-section";
 import Specialized from "@/components/pages/design-service/specialized/specilaized";
+import ContactMe from "@/components/pages/home/contact/contect-me";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Design Service",
+  description: "This is a description for Str Wave",
+};
 
 const DesignService = () => {
   return (
@@ -12,6 +19,7 @@ const DesignService = () => {
         <HeroSectionDesignService />
       </div>
       <Specialized />
+      <ContactMe />
     </>
   );
 };

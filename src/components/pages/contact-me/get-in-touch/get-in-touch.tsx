@@ -17,7 +17,8 @@ const GetInTouch = () => {
               <span className="purple_gradient__heading__txt">Artifice</span>
             </h2>
             <div className="grid grid-cols-1 lg-min:grid-cols-2 text-white gap-2 pt-10">
-              <div className="lg-min:col-span-2 bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] via  to-[var(--light-black-shade)] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15">
+              {/* <div className="lg-min:col-span-2 bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] to-[var(--light-black-shade)] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15"> */}
+              <div className="lg-min:col-span-2 bg-[#070b18] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15">
                 <Button className="bg-gradient-to-tr from-[var(--indigo-5)] from-50% to-[var(--indigo-2)] rounded-full p-4 h-16 w-16">
                   <MapPin className="h-8 w-8 stroke-1" />
                 </Button>

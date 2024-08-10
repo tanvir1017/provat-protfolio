@@ -82,16 +82,7 @@ const S__SLider = ({ breakPoints, className, children }: SliderProps) => {
 };
 
 const CardBg = ({ className, children }: ThemeProps) => {
-  return (
-    <div
-      className={cn(
-        "bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] via to-[var(--light-black-shade)]",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
+  return <div className={cn("bg-[#070b18]", className)}>{children}</div>;
 };
 
 export {

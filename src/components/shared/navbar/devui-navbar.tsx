@@ -17,7 +17,7 @@ const menuItems = [
   },
   {
     name: "Manufacturing Service",
-    href: "/design-service",
+    href: "/manufacturing-service",
   },
   {
     name: "Shop",
@@ -106,6 +106,12 @@ export function DevUiNavbar() {
                         </span>
                       </Link>
                     ))}
+                    <Button
+                      className="global__Button__gradient text-white transition-all duration-300 ease-in-out rounded-full !px-10 mt-2"
+                      onClick={() => router.push("/contact-me")}
+                    >
+                      Contact me
+                    </Button>
                   </nav>
                 </div>
               </div>
