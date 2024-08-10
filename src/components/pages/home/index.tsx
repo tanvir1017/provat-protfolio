@@ -1,6 +1,5 @@
 import React from "react";
 import HeroSection from "./hero-section/hero-section";
-import { Navbar } from "@/components/shared/navbar/navbar";
 import WhyMe from "./why-me/why-me";
 import RecentWork from "./recent-work/recent-work";
 import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
