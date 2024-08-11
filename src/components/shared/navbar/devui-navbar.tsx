@@ -1,10 +1,10 @@
 "use client";
-
-import React from "react";
-import { Menu, WandSparkles, X } from "lucide-react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import React from "react";
 
 const menuItems = [
   {
@@ -37,10 +37,13 @@ export function DevUiNavbar() {
     <div className="sticky top-0 w-full bg-black/5 backdrop-blur-sm z-50 border-b border-[#4c4160]">
       <div className="mx-auto container  flex items-center justify-between py-4">
         <Link href="/" className="inline-flex items-center space-x-2">
-          <span>
-            <WandSparkles className="text-white" />
-          </span>
-          <span className="font-bold uppercase text-white ">Strwave</span>
+          <Image
+            src="/assets/images/logo.png"
+            height={100}
+            width={40}
+            alt="logo"
+          />
+          <span className="font-semibold text-2xl text-white">Str Waves</span>
         </Link>
         <div className="hidden lg-min:block">
           <ul className="inline-flex items-center space-x-8">
@@ -59,7 +62,7 @@ export function DevUiNavbar() {
               className="global__Button__gradient text-white transition-all duration-300 ease-in-out rounded-full !px-10 "
               onClick={() => router.push("/contact-me")}
             >
-              Contact me
+              Contact Us
             </Button>
           </ul>
         </div>
@@ -75,11 +78,14 @@ export function DevUiNavbar() {
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between">
                   <Link href="/" className="inline-flex items-center space-x-2">
-                    <span>
-                      <WandSparkles className="text-white" />
-                    </span>
-                    <span className="font-bold uppercase text-white">
-                      Strwave
+                    <Image
+                      src="/assets/images/logo.png"
+                      height={100}
+                      width={30}
+                      alt="logo"
+                    />
+                    <span className="font-semibold text-xl text-white">
+                      Str Waves
                     </span>
                   </Link>
                   <div className="-mr-2">
@@ -110,7 +116,7 @@ export function DevUiNavbar() {
                       className="global__Button__gradient text-white transition-all duration-300 ease-in-out rounded-full !px-10 mt-2"
                       onClick={() => router.push("/contact-me")}
                     >
-                      Contact me
+                      Contact Us
                     </Button>
                   </nav>
                 </div>

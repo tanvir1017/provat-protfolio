@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { serviceInfo } from "@/data/demo-arrays";
 import { ServiceInfoType } from "@/ts/type";
 import { motion, useReducedMotion } from "framer-motion";
-import React from "react";
 import SpecializedCards from "./specialized-cards";
 
 const Specialized = () => {
@@ -15,35 +14,39 @@ const Specialized = () => {
   return (
     <>
       <div className="bg-[var(--dark-purple)] pt-10 lg-min:pt-0">
-        <div className="container">
-          <motion.div
-            initial="initial"
-            animate="visible"
-            variants={{
-              initial: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
-            }}
-          >
-            <motion.div variants={childVariants}>
-              <Button className="lg-min:bg-white/5 bg-black/45 backdrop-blur-sm m-auto rounded-full px-10 hover:bg-white/5 grid place-content-center">
-                <p className="purple_gradient__heading__txt text-center text-xl">
-                  Specialized In
-                </p>
-              </Button>
-            </motion.div>
+        <motion.div
+          initial="initial"
+          animate="visible"
+          variants={{
+            initial: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+          }}
+          className="container"
+        >
+          <motion.div variants={childVariants}>
+            <Button className="lg-min:bg-white/5 bg-black/45 backdrop-blur-sm m-auto rounded-full px-10 hover:bg-white/5 grid place-content-center">
+              <p className="purple_gradient__heading__txt text-center text-xl">
+                Specialized In
+              </p>
+            </Button>
           </motion.div>
+
           {/* Services Card */}
-          <div className="grid grid-cols-1 lg-min:grid-cols-4 gap-14 lg-min:gap-5 pt-28 lg-min:pt-32">
+          <div className="grid grid-cols-1 sm-min:grid-cols-2 lg-min:grid-cols-4 gap-14 sm-min:gap-x-8 sm-min:gap-y-28 lg-min:gap-5 pt-28 lg-min:pt-32">
             {serviceInfo.map((service: ServiceInfoType) => (
-              <div key={service.id} className="relative isolate h-[250px]">
+              <div
+                key={service.id}
+                className="relative isolate h-[250px] sm-min:h-[300px] md-min:h-[250px] lg-min:h-[250px]"
+              >
                 <Button
                   size={"icon"}
                   className="icon__bg__gradient rounded-full h-24 w-24 m-auto flex items-center justify-center absolute -top-2/4 left-1/2 -translate-x-1/2 translate-y-3/4 z-10"
                 >
                   {service.icon}
                 </Button>
-                <div className="bg-black/65 backdrop-blur-md px-4 pb-8 rounded-3xl text-center text-white border border-slate-700 border-opacity-50 h-full xs:[mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
-                  <h2 className="font-semibold text-3xl pb-2.5 pt-14">
+                <div className="mask__bg_gradient px-4 pb-8 rounded-3xl text-center text-white h-full">
+                  {/* <div className="bg-black/65 backdrop-blur-md px-4 pb-8 rounded-3xl text-center text-white border border-slate-700 border-opacity-50 h-full [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"> */}
+                  <h2 className="font-semibold text-3xl pb-2.5 pt-14 ">
                     {service.title}
                   </h2>
                   <p className="font-light">{service.description}</p>
@@ -51,7 +54,7 @@ const Specialized = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Specialized Services Card */}
         <div className="relative overflow-hidden">

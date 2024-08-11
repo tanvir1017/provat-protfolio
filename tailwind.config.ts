@@ -108,9 +108,22 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    function ({ addVariant }: any) {
+    function ({ addVariant, addUtilities }: any) {
       addVariant("child", "& > *");
       addVariant("child-hover", "& > *:hover");
+      const customUtilities = {
+        ".mask__bg_gradient": {
+          background:
+            "linear-gradient(180deg,rgb(31, 30, 58),rgba(0, 0, 0, 0) 80%)",
+        },
+
+        ".mask__image__gradient": {
+          "mask-image": "linear-gradient(180deg,white,rgba(255,255,255,0))",
+        },
+      };
+      addUtilities(customUtilities, {
+        variants: ["responsive", "dark", "child", "child-hover"],
+      });
     },
   ],
 } satisfies Config;
