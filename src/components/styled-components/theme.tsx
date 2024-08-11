@@ -1,14 +1,13 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { ReactNode } from "react";
-import * as Shadcn from "../ui/button";
-import { Swiper } from "swiper/react";
-import { Autoplay, FreeMode, Pagination } from "swiper/modules";
+import { SliderProps, ThemeProps } from "@/ts/type";
 import "swiper/css";
+import "swiper/css/autoplay";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import { SliderProps, ThemeProps } from "@/ts/type";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
+import { Swiper } from "swiper/react";
+import * as Shadcn from "../ui/button";
 
 // Used as background for matching the theme context
 const PurpleBlurry = ({ children, className }: ThemeProps) => {
@@ -28,6 +27,7 @@ const PurpleBlurry = ({ children, className }: ThemeProps) => {
 const PrimaryButton = ({ children, className }: ThemeProps) => {
   return (
     <Shadcn.Button
+      
       className={cn(
         "global__Button__gradient px-14 py-6 rounded-md relative overflow-hidden tracking-wider transition-all duration-300 ease-in-out",
         className
@@ -86,10 +86,7 @@ const CardBg = ({ className, children }: ThemeProps) => {
 };
 
 export {
-  PurpleBlurry,
-  PrimaryButton,
-  SecondaryButton,
-  SectionTitle,
-  S__SLider,
-  CardBg,
+  CardBg, PrimaryButton, PurpleBlurry, S__SLider, SecondaryButton,
+  SectionTitle
 };
+

@@ -241,10 +241,7 @@ Swiper pagination bullet
 }
 /* [] after:to-[] */
 .author__image {
-  background: linear-gradient(#6a3af6, var()) padding-box,
-    linear-gradient(45deg, var(--indio), #4a328d) border-box;
-  border: 5px solid transparent;
-  border-radius: 50%;
+  background-image: linear-gradient(45deg, var(--indigo-5), var(--indigo-2));
 }
 
 /**
