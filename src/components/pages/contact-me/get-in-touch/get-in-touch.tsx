@@ -1,9 +1,9 @@
+import { WhatsApp } from "@/assets/svg/svg-icons";
 import { Button } from "@/components/ui/button";
-import { MailOpen, MapPin, Phone } from "lucide-react";
-import React from "react";
-import SendMail from "./send-mail";
 import { socialConnections } from "@/data/demo-arrays";
 import { SocialConnection } from "@/ts/type";
+import { MailOpen, Phone } from "lucide-react";
+import SendMail from "./send-mail";
 
 const GetInTouch = () => {
   return (
@@ -20,7 +20,7 @@ const GetInTouch = () => {
               {/* <div className="lg-min:col-span-2 bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] to-[var(--light-black-shade)] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15"> */}
               <div className="lg-min:col-span-2 bg-[#070b18] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15">
                 <Button className="bg-gradient-to-tr from-[var(--indigo-5)] from-50% to-[var(--indigo-2)] rounded-full p-4 h-16 w-16">
-                  <MapPin className="h-8 w-8 stroke-1" />
+                  <WhatsApp className="h-8 w-8 stroke-1 fill-white" />
                 </Button>
                 <div>
                   <h5 className="text-2xl font-semibold">Office Location</h5>

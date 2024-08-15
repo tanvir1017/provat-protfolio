@@ -60,7 +60,7 @@ export function DevUiNavbar() {
 
             <Button
               className="global__Button__gradient text-white transition-all duration-300 ease-in-out rounded-full !px-10 "
-              onClick={() => router.push("/contact-me")}
+              onClick={() => router.push("/contact-us")}
             >
               Contact Us
             </Button>
@@ -114,7 +114,7 @@ export function DevUiNavbar() {
                     ))}
                     <Button
                       className="global__Button__gradient text-white transition-all duration-300 ease-in-out rounded-full !px-10 mt-2"
-                      onClick={() => router.push("/contact-me")}
+                      onClick={() => router.push("/contact-us")}
                     >
                       Contact Us
                     </Button>

@@ -5,7 +5,6 @@ const env = cleanEnv(process.env, {
   SMTP_HOST: str(),
   SMTP_PORT: num(),
   SMTP_SECURE: bool(),
-  SMTP_USER: str(),
   SMTP_PASS: str(),
 });
 

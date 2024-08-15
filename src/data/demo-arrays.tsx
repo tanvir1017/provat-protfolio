@@ -1,6 +1,9 @@
-import { ReviewArrType, ServiceInfoType, SocialConnection } from "@/ts/type";
 import * as SVGIcon from "@/assets/svg/svg-icons";
-import React from "react";
+import { ReviewArrType, ServiceInfoType, SocialConnection } from "@/ts/type";
+import { BsTwitterX } from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { TfiLinkedin } from "react-icons/tfi";
 
 export const reviewArr: ReviewArrType[] = [
   {
@@ -32,25 +35,25 @@ export const reviewArr: ReviewArrType[] = [
 export const socialConnections: SocialConnection[] = [
   {
     name: "facebook",
-    icon: <SVGIcon.Facebook />,
+    icon: <GrInstagram />,
     url: "https://www.facebook.com/provat.dev",
     alt: "Facebook connection of provat || strwave",
   },
   {
     name: "Discord",
-    icon: <SVGIcon.Discord className="w-5 h-5" />,
+    icon: <FaTiktok />,
     url: "https://www.disDiscord.com/provat.dev",
     alt: "Discord connection of provat || strwave",
   },
   {
     name: "twitter",
-    icon: <SVGIcon.Twitter />,
+    icon: <BsTwitterX />,
     url: "https://www.twitter.com/provat.dev",
     alt: "Twitter connection of provat || strwave",
   },
   {
     name: "Behance",
-    icon: <SVGIcon.Behance className="w-5 h-5" />,
+    icon: <TfiLinkedin />,
     url: "https://www.behance.net/provat.dev",
     alt: "Behance connection of provat || strwave",
   },
@@ -62,31 +65,62 @@ export const socialConnections: SocialConnection[] = [
   },
 ];
 
-export const serviceInfo: ServiceInfoType[] = [
+export const designServiceInfo: ServiceInfoType[] = [
   {
     id: 1,
-    icon: <SVGIcon.CheckedMark className="w-8 h-8" />,
+    icon: <SVGIcon.Diamond className="w-10 h-10" />,
     title: "Logo Design",
     description:
       "SamX delivered beyond expectations! Our new logo perfectly captures the essence of our brand. — Amanda K., Startup Founder",
   },
   {
     id: 2,
-    icon: <SVGIcon.Diamond className="w-8 h-8" />,
+    icon: <SVGIcon.CheckList className="w-10 h-10 fill-white" />,
     title: "NFT Artwork",
     description:
       "Collaborating was seamless, and the end result exceeded our expectations. Truly a visionary in the NFT space! -Michael C (NFT Enthusiasts)",
   },
   {
     id: 3,
-    icon: <SVGIcon.TaskBar className="w-8 h-8" />,
+    icon: <SVGIcon.Badge className="w-10 h10 fill-white" />,
     title: "Esports Team",
     description:
       "SamX brought our team's vision to life! The graphics for our esports team are not just visually stunning but also cohesive. -Angstygurl",
   },
   {
     id: 4,
-    icon: <SVGIcon.Home className="w-8 h-8" />,
+    icon: <SVGIcon.PencilAndRuler className="w-10 h-10 fill-white" />,
+    title: "Branding",
+    description:
+      "Exceptional creativity and professionalism! SamX transformed our ideas into a visually striking marketing campaign. — Sarah B",
+  },
+];
+
+export const manufactureServiceInfo: ServiceInfoType[] = [
+  {
+    id: 1,
+    icon: <SVGIcon.Diamond className="w-10 h-10" />,
+    title: "Logo Design",
+    description:
+      "SamX delivered beyond expectations! Our new logo perfectly captures the essence of our brand. — Amanda K., Startup Founder",
+  },
+  {
+    id: 2,
+    icon: <SVGIcon.Fabric className="w-10 h-10 fill-white" />,
+    title: "NFT Artwork",
+    description:
+      "Collaborating was seamless, and the end result exceeded our expectations. Truly a visionary in the NFT space! -Michael C (NFT Enthusiasts)",
+  },
+  {
+    id: 3,
+    icon: <SVGIcon.CheckList className="w-10 h10 fill-white" />,
+    title: "Esports Team",
+    description:
+      "SamX brought our team's vision to life! The graphics for our esports team are not just visually stunning but also cohesive. -Angstygurl",
+  },
+  {
+    id: 4,
+    icon: <SVGIcon.Shipping className="w-10 h-10 fill-white" />,
     title: "Branding",
     description:
       "Exceptional creativity and professionalism! SamX transformed our ideas into a visually striking marketing campaign. — Sarah B",

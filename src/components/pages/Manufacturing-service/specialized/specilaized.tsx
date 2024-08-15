@@ -1,11 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { designServiceInfo } from "@/data/demo-arrays";
+import { manufactureServiceInfo } from "@/data/demo-arrays";
 import { ServiceInfoType } from "@/ts/type";
 import { motion, useReducedMotion } from "framer-motion";
-import SpecializedCards from "./specialized-cards";
+import SpecializedCardsManufacture from "./specialized-cards";
 
-const Specialized = () => {
+const SpecializedManufacture = () => {
   const shouldReduceMotion = useReducedMotion();
   const childVariants = {
     initial: { opacity: 0, y: shouldReduceMotion ? 0 : 25 },
@@ -33,7 +33,7 @@ const Specialized = () => {
 
           {/* Services Card */}
           <div className="grid grid-cols-1 sm-min:grid-cols-2 lg-min:grid-cols-4 gap-14 sm-min:gap-x-8 sm-min:gap-y-28 lg-min:gap-5 pt-28 lg-min:pt-32">
-            {designServiceInfo.map((service: ServiceInfoType) => (
+            {manufactureServiceInfo.map((service: ServiceInfoType) => (
               <div
                 key={service.id}
                 className="relative isolate h-[250px] sm-min:h-[300px] md-min:h-[250px] lg-min:h-[250px]"
@@ -59,7 +59,7 @@ const Specialized = () => {
         {/* Specialized Services Card */}
         <div className="relative overflow-hidden">
           <div className="bg-gradient-to-tr from-[#6a3af6] to-[#4a328d] w-[700px] h-[800px] rounded-[50%] rotate-[270deg] absolute bottom-0 right-0 inset-x-3/4 inset-y-2/4 blur-[150px]"></div>
-          <SpecializedCards />
+          <SpecializedCardsManufacture />
 
           {/* Descriptive Text */}
           <div className="pb-5 px-4">
@@ -81,4 +81,4 @@ const Specialized = () => {
   );
 };
 
-export default Specialized;
+export default SpecializedManufacture;
