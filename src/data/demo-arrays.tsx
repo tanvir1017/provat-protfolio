@@ -34,33 +34,33 @@ export const reviewArr: ReviewArrType[] = [
 
 export const socialConnections: SocialConnection[] = [
   {
-    name: "facebook",
+    name: "Instagram",
     icon: <GrInstagram />,
-    url: "https://www.facebook.com/provat.dev",
-    alt: "Facebook connection of provat || strwave",
+    url: "https://www.instagram.com/str_waves/",
+    alt: "Instagram connection of provat || strwave",
   },
   {
-    name: "Discord",
+    name: "Tiktok",
     icon: <FaTiktok />,
-    url: "https://www.disDiscord.com/provat.dev",
-    alt: "Discord connection of provat || strwave",
+    url: "https://www.tiktok.com/@strwaves",
+    alt: "Tiktok connection of provat || strwave",
   },
   {
     name: "twitter",
     icon: <BsTwitterX />,
-    url: "https://www.twitter.com/provat.dev",
+    url: "https://x.com/strwaves",
     alt: "Twitter connection of provat || strwave",
   },
   {
-    name: "Behance",
+    name: "LinkedIn",
     icon: <TfiLinkedin />,
-    url: "https://www.behance.net/provat.dev",
-    alt: "Behance connection of provat || strwave",
+    url: "https://www.linkedin.com/in/str-wave-b8a3462a9/",
+    alt: "LinkedIn connection of provat || strwave",
   },
   {
     name: "Youtube",
     icon: <SVGIcon.Youtube />,
-    url: "https://www.youtube.com/provat.dev",
+    url: "https://www.youtube.com/@strwaves",
     alt: "Youtube connection of provat || strwave",
   },
 ];
