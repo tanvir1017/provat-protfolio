@@ -1,10 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import React from "react";
-import HeroSliderPhoto from "./slider";
-import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import HeroSliderPhoto from "./slider";
 
 const HeroSection = () => {
   const brandImageArray = ["10011", "10012", "10014", "10015", "10017"];
@@ -61,7 +60,7 @@ const HeroSection = () => {
       <div className="container">
         <div className=" grid place-items-center gap-y-7 lg-min:pb-44 pb-24">
           <h5 className="text-[var(--offWhite-3)] uppercase">
-            We successfully worked fo
+            We successfully worked for
           </h5>
 
           <div className="grid grid-cols-3 lg-min:grid-cols-5 gap-x-5 gap-y-2 lg-min:gap-y-0 lg-min:gap-x-16 place-items-center  ">
