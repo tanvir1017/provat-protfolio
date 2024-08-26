@@ -83,16 +83,16 @@ export const designServiceInfo: ServiceInfoType[] = [
   {
     id: 3,
     icon: <SVGIcon.Badge className="w-10 h10 fill-white" />,
-    title: "Esports Team",
+    title: "Originality",
     description:
-      "SamX brought our team's vision to life! The graphics for our esports team are not just visually stunning but also cohesive. -Angstygurl",
+      "At our jersey design service, we pride ourselves on creating unique and original designs that stand out from the competition.",
   },
   {
     id: 4,
     icon: <SVGIcon.PencilAndRuler className="w-10 h-10 fill-white" />,
-    title: "Branding",
+    title: "Customization",
     description:
-      "Exceptional creativity and professionalism! SamX transformed our ideas into a visually striking marketing campaign. — Sarah B",
+      "From colors and patterns to logos and text, we work closely with you to create a design that perfectly matches your vision.",
   },
 ];
 
@@ -100,29 +100,29 @@ export const manufactureServiceInfo: ServiceInfoType[] = [
   {
     id: 1,
     icon: <SVGIcon.Diamond className="w-10 h-10" />,
-    title: "Logo Design",
+    title: "Quality",
     description:
-      "SamX delivered beyond expectations! Our new logo perfectly captures the essence of our brand. — Amanda K., Startup Founder",
+      "Our jersey manufacturing service is dedicated to delivering exceptional quality with every product we create.",
   },
   {
     id: 2,
     icon: <SVGIcon.Fabric className="w-10 h-10 fill-white" />,
-    title: "NFT Artwork",
+    title: "Fabric",
     description:
-      "Collaborating was seamless, and the end result exceeded our expectations. Truly a visionary in the NFT space! -Michael C (NFT Enthusiasts)",
+      "Materials are selected for their breathability and moisture-wicking properties, making them ideal for athletes and casual wearers alike.",
   },
   {
     id: 3,
     icon: <SVGIcon.CheckList className="w-10 h10 fill-white" />,
-    title: "Esports Team",
+    title: "Budget Friendly",
     description:
-      "SamX brought our team's vision to life! The graphics for our esports team are not just visually stunning but also cohesive. -Angstygurl",
+      "Our service offers high-quality products at affordable prices, ensuring that you get the best value for your budget",
   },
   {
     id: 4,
     icon: <SVGIcon.Shipping className="w-10 h-10 fill-white" />,
-    title: "Branding",
+    title: "Rapid Shipping",
     description:
-      "Exceptional creativity and professionalism! SamX transformed our ideas into a visually striking marketing campaign. — Sarah B",
+      "Our shipping process is designed to handle international orders with care and precision, providing you with timely updates and reliable delivery",
   },
 ];

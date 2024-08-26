@@ -13,8 +13,8 @@ const GetInTouch = () => {
           {/* Get In Touch ⬇️ */}
           <div id="get-in-touch">
             <h2 className="text-white text-[2rem] lg-min:text-[3rem] lg-min:max-w-2xl max-w-full leading-snug font-semibold ">
-              Get In Touch And Let's Collaborate With{" "}
-              <span className="purple_gradient__heading__txt">Artifice</span>
+              Get In Touch And Collaborate with
+              <span className="purple_gradient__heading__txt"> Str Waves</span>
             </h2>
             <div className="grid grid-cols-1 lg-min:grid-cols-2 text-white gap-2 pt-10">
               {/* <div className="lg-min:col-span-2 bg-gradient-to-tr from-black/25 from-5% via-80% via-[var(--black-shade)] to-[var(--light-black-shade)] p-5 rounded-lg flex items-center gap-x-5 border border-gray-100/15"> */}
@@ -23,10 +23,11 @@ const GetInTouch = () => {
                   <WhatsApp className="h-8 w-8 stroke-1 fill-white" />
                 </Button>
                 <div>
-                  <h5 className="text-2xl font-semibold">Office Location</h5>
+                  <h5 className="text-2xl font-semibold">WhatsApp</h5>
+                  <p className="text-gray-400">+880 188600 9098</p>
                   <p className="text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, dolore?
+                    Contact via WhatsApp for better response and effortless
+                    conversation
                   </p>
                 </div>
               </div>
@@ -36,7 +37,7 @@ const GetInTouch = () => {
                 </Button>
                 <div>
                   <h5 className="text-2xl font-semibold">Phone Number</h5>
-                  <p className="text-gray-400">XXX-XXXX-XX</p>
+                  <p className="text-gray-400">+880 188600 9098</p>
                 </div>
               </div>
               <div className="col-span-1 p-5 rounded-lg flex items-center gap-x-5">
@@ -44,8 +45,8 @@ const GetInTouch = () => {
                   <MailOpen className="h-8 w-8 stroke-1" />
                 </Button>
                 <div>
-                  <h5 className="text-2xl font-semibold">Office Location</h5>
-                  <p className="text-gray-400">help@strwave.com</p>
+                  <h5 className="text-2xl font-semibold">Email</h5>
+                  <p className="text-gray-400">info.strwaves@gmail.com</p>
                 </div>
               </div>
             </div>

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 const HeroSectionShop = () => {
@@ -23,14 +22,14 @@ const HeroSectionShop = () => {
           variants={childVariants}
           className="inline-block font-medium text-center lg-min:leading-[6rem] leading-[3rem] text-[2.75rem] lg-min:text-[5.75rem] max-w-full lg-min:max-w-4xl hero__text"
         >
-          Where Imagination Meets Reality
+          Grab Your Desired Freebies Now
         </motion.h1>
         <motion.h6
           variants={childVariants}
           className="text-[#ffffffb5] max-w-md text-center font-light lg-min:font-normal"
         >
-          Turning your imagination into vibrant, tangible experiences through
-          innovative design and technology.
+          These products are only for personal use. Do not use them for
+          commercials. Enjoy your freebies
         </motion.h6>
       </motion.div>
     </div>

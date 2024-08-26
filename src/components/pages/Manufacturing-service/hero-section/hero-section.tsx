@@ -20,16 +20,16 @@ const HeroSectionMenufacturingService = () => {
       >
         <motion.h1
           variants={childVariants}
-          className="inline-block font-medium text-center lg-min:leading-[6rem] leading-[3rem] text-[2.75rem] lg-min:text-[5.75rem] max-w-full lg-min:max-w-3xl hero__text"
+          className="inline-block font-medium text-center lg-min:leading-[6rem] leading-[3rem] text-[2.75rem] lg-min:text-[5.75rem] max-w-full lg-min:max-w-4xl hero__text"
         >
-          Let's create a masterpiece
+          Where Imagination Meets Reality
         </motion.h1>
         <motion.h6
           variants={childVariants}
           className="text-[#ffffffb5] max-w-md text-center font-light lg-min:font-normal"
         >
-          Our AI image generation service empowers you to bring your creative
-          visions to life like never before.
+          Our excellence is reflected in our use of high-grade materials and
+          Premium Fabric collection.
         </motion.h6>
       </motion.div>
     </div>

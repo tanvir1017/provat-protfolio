@@ -48,19 +48,21 @@ const HeroSectionContactMe = () => {
               variants={childVariants}
               className="purple_gradient__heading__txt text-[3.0rem] xs-min:text-[4.0rem] sm-min:text-[5rem] lg-min:text-[7rem] font-medium "
             >
-              masterpiece
+              About Us
             </motion.h1>
             <motion.p
               variants={childVariants}
               className="text-base font-light lg-min:text-lg leading-7 lg-min:leading-10"
             >
-              Create your Beautiful Software Company website with our carefully
-              designed d Template Kit. This template contains ready-to-use pages
-              that feature a beautiful FAQ, Pricing Table etc. It has a 100%
-              responsive layout, retina-ready, and very easy to customize. You
-              don't need a single line of coding! This temp late kit includes
-              stunning carefully crafted 7 stunning templates, you can build
-              your professional-looking Business website just a click away.
+              Welcome to Str Waves, your premier destination for custom jersey
+              design and manufacturing. Since our inception in 2020, we have
+              proudly served clients across more than 30 countries, delivering
+              high-quality, bespoke jerseys tailored to meet diverse needs. Our
+              commitment to excellence in design and production ensures that
+              every jersey we create offers unmatched comfort, durability, and
+              style. At Str Waves, we blend creativity with craftsmanship to
+              provide you with top-notch jerseys that stand out on the field and
+              beyond.
             </motion.p>
           </motion.div>
         </div>

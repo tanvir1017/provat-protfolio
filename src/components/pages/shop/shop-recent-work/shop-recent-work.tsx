@@ -24,7 +24,7 @@ const RecentWorkShop = () => {
           <motion.div variants={childVariants}>
             <Button className="bg-black/45 lg-min:bg-white/5 backdrop-blur-sm m-auto rounded-full px-10 lg-min:hover:bg-white/5 hover:bg-black/45 grid place-content-center">
               <p className="purple_gradient__heading__txt text-center text-xl">
-                Recent Work
+                Freebies
               </p>
             </Button>
           </motion.div>
