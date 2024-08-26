@@ -69,16 +69,16 @@ export const designServiceInfo: ServiceInfoType[] = [
   {
     id: 1,
     icon: <SVGIcon.Diamond className="w-10 h-10" />,
-    title: "Logo Design",
+    title: "Quality",
     description:
-      "SamX delivered beyond expectations! Our new logo perfectly captures the essence of our brand. — Amanda K., Startup Founder",
+      "We deliver designs which are original, premium and maintain a modern look that stands out and performs well.",
   },
   {
     id: 2,
     icon: <SVGIcon.CheckList className="w-10 h-10 fill-white" />,
-    title: "NFT Artwork",
+    title: "Budget Friendly",
     description:
-      "Collaborating was seamless, and the end result exceeded our expectations. Truly a visionary in the NFT space! -Michael C (NFT Enthusiasts)",
+      "Our service offers high-quality designs at affordable prices, ensuring that you get the best value for your budget",
   },
   {
     id: 3,
