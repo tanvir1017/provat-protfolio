@@ -65,13 +65,14 @@ const SpecializedManufacture = () => {
           <div className="pb-5 px-4">
             <div className="max-w-full lg-min:max-w-6xl m-auto isolate z-0 py-10 rounded-2xl">
               <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident fuga, rerum repudiandae nulla dolore optio! Omnis
-                excepturi asperiores corporis, placeat minima ex, nisi veniam
-                officiis, provident libero quisquam. Reprehenderit hic illo
-                praesentium fugiat nesciunt earum sapiente culpa cumque dicta!
-                Quasi a eveniet maiores soluta placeat deleniti dignissimos
-                officia, accusantium totam?
+                Our jersey design service, where creativity meets functionality.
+                Whether you're a sports team, a business, or an individual
+                looking to stand out, we offer custom jersey designs beyond your
+                needs. Our expert designers work closely with you to create
+                unique, high-quality jerseys that reflect your style and
+                purpose. From concept to final product, we ensure every detail
+                is crafted to perfection, providing you with jerseys that not
+                only look great but also perform well.
               </p>
             </div>
           </div>

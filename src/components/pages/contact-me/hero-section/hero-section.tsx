@@ -16,7 +16,7 @@ const HeroSectionContactMe = () => {
     <>
       <div className="w-[120px] h-[120px] lg-min:bg-[var(--indigo-5)] lg-min:rounded-full lg-min:blur-[80px] opacity-100 absolute right-0 bottom-0"></div>
       <div className="container mt-8 lg-min:mt-0 lg-min:pt-36 pt-[100px]">
-        <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center h-[90dvh]">
+        <div className="grid grid-cols-1 lg-min:grid-cols-2 place-items-center lg-min:h-[90dvh] h-full lg-min:pb-0 pb-10">
           <div className="author__image z-10 p-1.5 rounded-full ">
             <div className="bg-black/75 backdrop-blur-md rounded-full">
               <Image
@@ -42,7 +42,7 @@ const HeroSectionContactMe = () => {
               initial: { opacity: 0 },
               visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
             }}
-            className="text-white -mt-20 z-10"
+            className="text-white lg-min:-mt-20 mt-0  z-10"
           >
             <motion.h1
               variants={childVariants}

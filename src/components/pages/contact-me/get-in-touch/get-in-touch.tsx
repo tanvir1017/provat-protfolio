@@ -8,12 +8,13 @@ import SendMail from "./send-mail";
 const GetInTouch = () => {
   return (
     <div className="bg-[var(--dark-purple)]">
-      <div className="container py-[6.25rem]">
+      <div className="container lg-min:py-[6.25rem] py-[2.25rem]">
         <div className="grid grid-cols-1 lg-min:grid-cols-2 lg-min:gap-x-10">
           {/* Get In Touch ⬇️ */}
           <div id="get-in-touch">
             <h2 className="text-white text-[2rem] lg-min:text-[3rem] lg-min:max-w-2xl max-w-full leading-snug font-semibold ">
               Get In Touch And Collaborate with
+              <br className="lg-min:hidden block " />
               <span className="purple_gradient__heading__txt"> Str Waves</span>
             </h2>
             <div className="grid grid-cols-1 lg-min:grid-cols-2 text-white gap-2 pt-10">
@@ -25,7 +26,7 @@ const GetInTouch = () => {
                 <div>
                   <h5 className="text-2xl font-semibold">WhatsApp</h5>
                   <p className="text-gray-400">+880 188600 9098</p>
-                  <p className="text-gray-400">
+                  <p className="text-gray-400 pt-2 lg-min:text-base text-sm">
                     Contact via WhatsApp for better response and effortless
                     conversation
                   </p>

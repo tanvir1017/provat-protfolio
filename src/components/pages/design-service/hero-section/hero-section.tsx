@@ -1,6 +1,5 @@
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import React from "react";
 
 const HeroSectionDesignService = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -29,8 +28,8 @@ const HeroSectionDesignService = () => {
           variants={childVariants}
           className="text-[#ffffffb5] max-w-md text-center font-light lg-min:font-normal"
         >
-          Our AI image generation service empowers you to bring your creative
-          visions to life like never before.
+          We combine creativity with precision to deliver designs that stand out
+          and perform
         </motion.h6>
       </motion.div>
     </div>
