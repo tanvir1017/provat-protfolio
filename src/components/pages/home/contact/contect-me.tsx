@@ -2,10 +2,9 @@
 import * as Theme from "@/components/styled-components/theme";
 import { socialConnections } from "@/data/demo-arrays";
 import { SocialConnection } from "@/ts/type";
-import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 const ContactMe = () => {
   return (
@@ -39,7 +38,7 @@ const ContactMe = () => {
         </div>
         <div className="grid place-items-center">
           <Link
-            href="/contact-me"
+            href="/contact-us"
             className=" bg-white/5 p-1.5 backdrop-blur-md rounded-full"
           >
             <Theme.PrimaryButton className="space-x-3 py-6 lg-min:py-8 rounded-full">

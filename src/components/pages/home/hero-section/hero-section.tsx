@@ -6,7 +6,14 @@ import { useRouter } from "next/navigation";
 import HeroSliderPhoto from "./slider";
 
 const HeroSection = () => {
-  const brandImageArray = ["10011", "10012", "10014", "10015", "10017"];
+  const brandImageArray = [
+    "dakli.png",
+    "covenent-clothing.png",
+    "caribbean.png",
+    "24.png",
+    "function.png",
+    "brand-6.png",
+  ];
   const router = useRouter();
 
   const shouldReduceMotion = useReducedMotion();
@@ -16,7 +23,7 @@ const HeroSection = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="container lg-min:pt-[12.585rem] pt-[200px]">
         <div className="grid place-content-center">
           <motion.div
@@ -63,31 +70,31 @@ const HeroSection = () => {
             We successfully worked for
           </h5>
 
-          <div className="grid grid-cols-3 lg-min:grid-cols-5 gap-x-5 gap-y-2 lg-min:gap-y-0 lg-min:gap-x-16 place-items-center  ">
+          <div className="grid grid-cols-3 lg-min:grid-cols-6 gap-x-5 gap-y-2 lg-min:gap-y-0 lg-min:gap-x-8 place-items-center  ">
             {brandImageArray.map((image) => (
-              <>
+              <div>
                 <Image
-                  src={`/assets/images/${image}.png`}
+                  src={`/assets/images/${image}`}
                   height={100}
-                  width={130}
+                  width={150}
                   priority
                   alt="Brand that I've work with"
                   className="opacity-70 hover:opacity-100 lg-min:block hidden"
                 />
                 <Image
-                  src={`/assets/images/${image}.png`}
+                  src={`/assets/images/${image}`}
                   height={100}
                   width={80}
                   priority
                   alt="Brand that I've work with"
                   className="opacity-70 hover:opacity-100 lg-min:hidden block "
                 />
-              </>
+              </div>
             ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

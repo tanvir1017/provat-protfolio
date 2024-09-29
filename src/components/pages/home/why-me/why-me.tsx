@@ -2,15 +2,14 @@
 
 import Image from "next/image";
 
-import React from "react";
-import { SlidingText } from "./sliding-text";
-import CountUp from "react-countup";
 import * as Theme from "@/components/styled-components/theme";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { SlidingText } from "./sliding-text";
 
 const WhyMe = () => {
   return (
-    <>
+    <div>
       <Theme.PurpleBlurry className="overflow-hidden">
         <div className="container py-10">
           {/* Heading ANd title */}
@@ -94,7 +93,7 @@ const WhyMe = () => {
               </div>
             </div>
             {/* column 3 */}
-            <div className="lg-min:col-span-2 py-16 lg-min:py-20 bg-[url('/assets/images/10029.png')] bg-cover bg-no-repeat bg-right-bottom rounded-xl relative overflow-hidden  after:content[''] after:absolute after:w-full after:h-full after:bg-[#0000007a] after:z-10 grid place-items-center">
+            <div className="lg-min:col-span-2 py-16 lg-min:py-20 bg-[url('/assets/images/modern-design-ideas-resources.jpg')] bg-cover bg-no-repeat bg-right-bottom rounded-xl relative overflow-hidden  after:content[''] after:absolute after:w-full after:h-full after:bg-[#0000007a] after:z-10 grid place-items-center">
               <motion.h2
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +137,7 @@ const WhyMe = () => {
                 height={100}
                 width={250}
                 layout="responsive"
-                src="/assets/images/10018.png"
+                src="/assets/images/custom-design.png"
                 alt="dog cat bird"
               />
             </div>{" "}
@@ -170,7 +169,7 @@ const WhyMe = () => {
               <Image
                 height={100}
                 width={350}
-                src="/assets/images/10019.png"
+                src="/assets/images/project-completed.png"
                 alt="Ai generated doggy image"
               />
             </div>
@@ -179,7 +178,7 @@ const WhyMe = () => {
               <Image
                 height={100}
                 width={390}
-                src="/assets/images/10020.png"
+                src="/assets/images/jursy-design.png"
                 alt="dog cat bird"
               />
             </div>{" "}
@@ -188,7 +187,7 @@ const WhyMe = () => {
         </div>
         <SlidingText />
       </Theme.PurpleBlurry>
-    </>
+    </div>
   );
 };
 

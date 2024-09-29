@@ -1,10 +1,9 @@
 "use client";
-import React from "react";
 import * as Theme from "@/components/styled-components/theme";
+import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
-import { motion } from "framer-motion";
 
 const PlanAndPricing = () => {
   return (
@@ -41,7 +40,11 @@ const PlanAndPricing = () => {
                 <Theme.CardBg className="border-[#2e2e2e] border px-4 pt-5 pb-16 rounded-[28px] relative overflow-hidden">
                   <div id="card--image" className="">
                     <Image
-                      src="/assets/images/t-shirt.png"
+                      src={`/assets/images/${
+                        index === 1
+                          ? "jersey-design-services.jpg"
+                          : "jersey-manufacture-services.jpg"
+                      }`}
                       alt="E-sports T-shirt"
                       height={100}
                       width={450}

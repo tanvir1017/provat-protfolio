@@ -1,18 +1,16 @@
 "use client";
-import React from "react";
-import { SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import * as Theme from "@/components/styled-components/theme";
+import Image from "next/image";
+import { SwiperSlide } from "swiper/react";
 
 export default function HeroSliderPhoto() {
   const swiperSLideImage = [
-    "10003",
-    "10004",
-    "10005",
-    "10006",
-    "10007",
-    "10008",
-    "10009",
+    "jersey-front-strWave.jpg",
+    "jersey-back-strWave.jpg",
+    "jersey-black-yellow-strWave.jpg",
+    "jersey-black-gray-strWave.jpg",
+    "jersey-red-white-black-combine-strWave.jpg",
+    "jersey-unisex-strWave.jpg",
   ];
   const swiperBreakPoints = {
     // when window width is >= 320px
@@ -36,24 +34,24 @@ export default function HeroSliderPhoto() {
     },
   };
   return (
-    <>
+    <div>
       <Theme.S__SLider breakPoints={swiperBreakPoints}>
         <div className="max-w-full">
           <div className="">
             {swiperSLideImage.map((image) => (
               <SwiperSlide key={image} className="rounded-3xl bg-transparent ">
                 <Image
-                  src={`/assets/images/${image}.png`}
+                  src={`/assets/images/${image}`}
                   height={80}
                   width={424}
                   alt="swiper images"
-                  className="rounded-2xl"
+                  className="rounded-2xl select-none"
                 />
               </SwiperSlide>
             ))}
           </div>
         </div>
       </Theme.S__SLider>
-    </>
+    </div>
   );
 }

@@ -50,7 +50,9 @@ export async function POST(req: NextRequest) {
       from: env.SMTP_EMAIL,
       to: body.email,
       subject: body.subject,
-      text: body.message,
+      html: `
+        
+        `,
     };
 
     await transporter.sendMail(mailOptions);

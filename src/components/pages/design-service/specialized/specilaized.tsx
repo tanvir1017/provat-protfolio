@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { designServiceInfo } from "@/data/demo-arrays";
 import { ServiceInfoType } from "@/ts/type";
 import { motion, useReducedMotion } from "framer-motion";
-import SpecializedCards from "./specialized-cards";
+import SpecializedCard from "./specialized-card";
 
 const Specialized = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -11,8 +11,17 @@ const Specialized = () => {
     initial: { opacity: 0, y: shouldReduceMotion ? 0 : 25 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+
+  const designPageImages = [
+    "DESIGN copy1.jpg",
+    "DESIGN copy2.jpg",
+    "DESIGN copy3.jpg",
+    "DESIGN copy4.jpg",
+    "DESIGN copy5.jpg",
+    "DESIGN copy6.jpg",
+  ];
   return (
-    <>
+    <div>
       <div className="bg-[var(--dark-purple)] pt-10 lg-min:pt-0">
         <motion.div
           initial="initial"
@@ -59,7 +68,11 @@ const Specialized = () => {
         {/* Specialized Services Card */}
         <div className="relative overflow-hidden">
           <div className="bg-gradient-to-tr from-[#6a3af6] to-[#4a328d] w-[700px] h-[800px] rounded-[50%] rotate-[270deg] absolute bottom-0 right-0 inset-x-3/4 inset-y-2/4 blur-[150px]"></div>
-          <SpecializedCards />
+          <div className="grid grid-cols-1 lg-min:grid-cols-3 place-content-center gap-3 px-4 lg-min:px-4 py-10 lg-min:py-14 container m-auto isolate z-0">
+            {designPageImages.map((serviceImage: string) => (
+              <SpecializedCard serviceImage={serviceImage} />
+            ))}{" "}
+          </div>
 
           {/* Descriptive Text */}
           <div className="pb-5 px-4">
@@ -78,7 +91,7 @@ const Specialized = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
