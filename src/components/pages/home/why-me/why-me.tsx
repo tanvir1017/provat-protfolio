@@ -177,7 +177,7 @@ const WhyMe = () => {
             <div className="bg-white/5 backdrop-blur-sm rounded-xl grid place-items-center">
               <Image
                 height={100}
-                width={390}
+                width={450}
                 src="/assets/images/jursy-design.png"
                 alt="dog cat bird"
               />

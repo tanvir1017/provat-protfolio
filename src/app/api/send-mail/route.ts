@@ -871,7 +871,7 @@ export async function POST(req: NextRequest) {
                                       <img
                                         align="left"
                                         border="0"
-                                        src="https://raw.githubusercontent.com/tanvir1017/provat-protfolio/refs/heads/main/src/utils/email-template/images/image-6.png"
+                                        src="https://i.ibb.co.com/jWr6sVn/10006.png"
                                         alt="image"
                                         title="image"
                                         style="
@@ -1199,7 +1199,7 @@ export async function POST(req: NextRequest) {
                                               target="_blank"
                                             >
                                               <img
-                                                src="images/image-3.png"
+                                                src="https://i.ibb.co.com/V3D4TcP/image.png"
                                                 alt="Facebook"
                                                 title="Facebook"
                                                 width="32"
@@ -1260,7 +1260,7 @@ export async function POST(req: NextRequest) {
                                               target="_blank"
                                             >
                                               <img
-                                                src="images/image-1.png"
+                                                src="https://i.ibb.co.com/JqBbJtW/image.png"
                                                 alt="LinkedIn"
                                                 title="LinkedIn"
                                                 width="32"
@@ -1321,7 +1321,7 @@ export async function POST(req: NextRequest) {
                                               target="_blank"
                                             >
                                               <img
-                                                src="images/image-4.png"
+                                                src="https://i.ibb.co.com/JpN0KtP/image.png"
                                                 alt="Instagram"
                                                 title="Instagram"
                                                 width="32"
@@ -1382,7 +1382,7 @@ export async function POST(req: NextRequest) {
                                               target="_blank"
                                             >
                                               <img
-                                                src="images/image-5.png"
+                                                src="https://i.ibb.co.com/L6Dz3jJ/image.png"
                                                 alt="X"
                                                 title="X"
                                                 width="32"

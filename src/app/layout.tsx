@@ -1,8 +1,8 @@
+import { DevUiNavbar } from "@/components/shared/navbar/devui-navbar";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { DevUiNavbar } from "@/components/shared/navbar/devui-navbar";
-
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +20,7 @@ export default function RootLayout({
       <body className={outfit.className}>
         <DevUiNavbar />
         <div className="lg-min:-mt-20 -mt-24">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
