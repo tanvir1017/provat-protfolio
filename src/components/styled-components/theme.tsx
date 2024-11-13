@@ -27,7 +27,6 @@ const PurpleBlurry = ({ children, className }: ThemeProps) => {
 const PrimaryButton = ({ children, className }: ThemeProps) => {
   return (
     <Shadcn.Button
-      
       className={cn(
         "global__Button__gradient px-14 py-6 rounded-md relative overflow-hidden tracking-wider transition-all duration-300 ease-in-out",
         className
@@ -86,7 +85,11 @@ const CardBg = ({ className, children }: ThemeProps) => {
 };
 
 export {
-  CardBg, PrimaryButton, PurpleBlurry, S__SLider, SecondaryButton,
+  CardBg,
+  PrimaryButton,
+  PurpleBlurry,
+  S__SLider,
+  SecondaryButton,
   SectionTitle
 };
 

@@ -7,28 +7,28 @@ import { TfiLinkedin } from "react-icons/tfi";
 
 export const reviewArr: ReviewArrType[] = [
   {
-    name: "Justin L.",
-    role: "Content Creator",
+    name: "Willam Millots",
+    role: "CEO",
     image: "10026",
-    text: "I was initially skeptical about AI-generated images as a professional photographer. However, I've found that this service complements my work brilliantly. It helps me experiment with new styles and concepts that I wouldn't have considered otherwise.",
+    text: "Str Waves has been a game-changer for my Custom Jersey business. They been able to create stunning Jerseys that are both visually appealing and engaging. My clients have been incredibly satisfied with the designs, and I'm grateful for the help I've received from Str.",
   },
   {
-    name: "Emily B.",
-    role: "Designer",
+    name: "Jack and Brothers",
+    role: "Founder",
     image: "10027",
-    text: "I've always been fascinated by the idea of AI-generated images. With Provat, I've been able to create beautiful, realistic images that are both visually appealing and engaging. My clients have loved the results, and I'm grateful for the help I've received from Provat.",
+    text: "I recently had the pleasure of working with Str, and I am beyond thrilled with the outcome. The attention to detail, color coordination, and overall design aesthetic truly exceeded my expectations. I couldn't be happier with the final result. Highly recommend this designer for anyone looking for top-tier, custom jersey designs!",
   },
   {
-    name: "Michael C.",
-    role: "Artist",
+    name: "Hustle Clo24",
+    role: "Founder",
     image: "10028",
-    text: "I've always been a fan of AI-generated images, and Provat has been an incredible help in creating beautiful, realistic images that I've been able to use in my work. My clients have been incredibly satisfied with the results, and I'm grateful for the help I've received from Provat.",
+    text: "From the initial concept to the final product, everything was executed with precision and creativity. Each jersey reflects a unique blend. Their satisfaction speaks volumes, and I highly recommend this designer to anyone looking for high-quality, custom jersey designs that stand out from the crowd.",
   },
   {
-    name: "Mark S",
-    role: "Photographer",
+    name: "Caribbean",
+    role: "Founder",
     image: "10028_1",
-    text: "Provat has been a game-changer for my photography business. I've been able to create stunning images that are both visually appealing and engaging. My clients have been incredibly satisfied with the results, and I'm grateful for the help I've received from Provat.",
+    text: "I recently had the pleasure of working with Str Waves, a talented jersey designer, and I couldn't be more impressed with their work. The creative direction was fresh, with bold choices that still felt timeless. If you're looking for a designer who can bring your vision to life with precision and flair, I highly recommend Str Waves. The entire experience was smooth, professional, and ultimately delivered designs that exceeded my expectations",
   },
 ];
 

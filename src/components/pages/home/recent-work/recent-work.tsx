@@ -1,10 +1,8 @@
 "use client";
 import * as Theme from "@/components/styled-components/theme";
 import { Button } from "@/components/ui/button";
-import { PlayIcon } from "lucide-react";
-import React from "react";
-import ProjectCard from "./project-card";
 import { motion } from "framer-motion";
+import ProjectCard from "./project-card";
 
 const RecentWork = () => {
   return (
@@ -39,17 +37,7 @@ const RecentWork = () => {
         </div>
       </Theme.PurpleBlurry>
 
-      {/* Video Placeholder */}
-
-      <div
-        id="video--placeholder"
-        className="h-[30dvh] lg-min:h-[70dvh] bg-[var(--dark-purple)] bg-[url(/assets/images/10030.jpg)] bg-no-repeat bg-center bg-cover grid place-items-center"
-      >
-        <div className="bg-white inline-block rounded-full p-6 ">
-          <PlayIcon className="h-10 w-10" style={{ strokeWidth: "1px" }} />
-        </div>
-      </div>
-      {/* Video Placeholder */}
+      
     </>
   );
 };

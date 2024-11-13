@@ -1,11 +1,11 @@
-import React from "react";
-import HeroSection from "./hero-section/hero-section";
-import WhyMe from "./why-me/why-me";
-import RecentWork from "./recent-work/recent-work";
-import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
-import ReviewOrTestimonial from "./review-or-testimonial/review-or-testimonial";
-import ContactMe from "./contact/contect-me";
 import * as Theme from "@/components/styled-components/theme";
+import ContactMe from "./contact/contect-me";
+import HeroSection from "./hero-section/hero-section";
+import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
+import RecentWork from "./recent-work/recent-work";
+import ReviewOrTestimonial from "./review-or-testimonial/review-or-testimonial";
+import VideoPlayer from "./video/video-player";
+import WhyMe from "./why-me/why-me";
 
 const Home = () => {
   return (
@@ -24,6 +24,10 @@ const Home = () => {
 
       {/* Why Me section */}
       <RecentWork />
+      {/* Why Me section */}
+
+      {/* Why Me section */}
+      <VideoPlayer />
       {/* Why Me section */}
 
       {/*Plan And Pricing */}

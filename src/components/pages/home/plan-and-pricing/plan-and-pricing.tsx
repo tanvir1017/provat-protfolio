@@ -60,7 +60,11 @@ const PlanAndPricing = () => {
                     </p>
                   </div>
                 </Theme.CardBg>
-                <Link href="/shop">
+                <Link
+                  href={
+                    index !== 1 ? "/manufacturing-service" : "/design-service"
+                  }
+                >
                   <Theme.SecondaryButton className="-mt-5 py-7 space-x-3">
                     <span>Check Out</span> <MoveRight />
                   </Theme.SecondaryButton>

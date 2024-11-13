@@ -71,8 +71,8 @@ const HeroSection = () => {
           </h5>
 
           <div className="grid grid-cols-3 lg-min:grid-cols-6 gap-x-5 gap-y-2 lg-min:gap-y-0 lg-min:gap-x-8 place-items-center  ">
-            {brandImageArray.map((image) => (
-              <div>
+            {brandImageArray.map((image, index) => (
+              <div key={index}>
                 <Image
                   src={`/assets/images/${image}`}
                   height={100}

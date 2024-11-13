@@ -1,10 +1,9 @@
 "use client";
-import React, { useRef, useState } from "react";
 
-import Image from "next/image";
-import { ReviewArrType } from "@/ts/type";
-import { reviewArr } from "@/data/demo-arrays";
 import * as Theme from "@/components/styled-components/theme";
+import { reviewArr } from "@/data/demo-arrays";
+import { ReviewArrType } from "@/ts/type";
+import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 
 export default function ReviewSLider() {
@@ -38,10 +37,11 @@ export default function ReviewSLider() {
             className="bg-white/5 backdrop-blur-sm rounded-xl py-10 px-7 h-full cursor-grab"
           >
             <Image
-              src={`/assets/images/${review.image}.png`}
+              src={`/assets/images/reviewer-user.jpg`}
               alt={`${review.name}'s Review`}
               height={60}
               width={60}
+              className="rounded-full"
             />
             <div className="flex flex-col text-white text-sm pt-6">
               <p className="text-xl font-light pb-4">"{review.text}"</p>

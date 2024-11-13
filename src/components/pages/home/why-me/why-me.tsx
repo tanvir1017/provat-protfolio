@@ -178,7 +178,7 @@ const WhyMe = () => {
               <Image
                 height={100}
                 width={450}
-                src="/assets/images/jursy-design.png"
+                src="/assets/images/jursy/jursy-design.png"
                 alt="dog cat bird"
               />
             </div>{" "}
