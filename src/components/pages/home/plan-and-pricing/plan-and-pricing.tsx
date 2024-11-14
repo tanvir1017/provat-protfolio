@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const PlanAndPricing = () => {
+const DiscoverDesire = () => {
   return (
     <div className="overflow-hidden ">
       <div className="relative z-10 bg-[var(--dark-purple)] after:content-[''] after:bg-gradient-to-tr after:from-[var(--indigo-5)] after:to-[var(--indigo-5)] after:absolute after:top-[50%] after:-right-[200px] after:blur-[280px] after:w-[800px] after:h-[800px] after:rounded-full after:-z-10 bg-center bg-cover pt-10 pb-[6rem]">
@@ -40,7 +40,7 @@ const PlanAndPricing = () => {
                 <Theme.CardBg className="border-[#2e2e2e] border px-4 pt-5 pb-16 rounded-[28px] relative overflow-hidden">
                   <div id="card--image" className="">
                     <Image
-                      src={`/assets/images/${
+                      src={`/assets/images/jursy/${
                         index === 1
                           ? "jersey-design-services.jpg"
                           : "jersey-manufacture-services.jpg"
@@ -78,4 +78,4 @@ const PlanAndPricing = () => {
   );
 };
 
-export default PlanAndPricing;
+export default DiscoverDesire;

@@ -1,7 +1,7 @@
 import * as Theme from "@/components/styled-components/theme";
 import ContactMe from "./contact/contect-me";
 import HeroSection from "./hero-section/hero-section";
-import PlanAndPricing from "./plan-and-pricing/plan-and-pricing";
+import DiscoverDesire from "./plan-and-pricing/plan-and-pricing";
 import RecentWork from "./recent-work/recent-work";
 import ReviewOrTestimonial from "./review-or-testimonial/review-or-testimonial";
 import VideoPlayer from "./video/video-player";
@@ -30,9 +30,9 @@ const Home = () => {
       <VideoPlayer />
       {/* Why Me section */}
 
-      {/*Plan And Pricing */}
-      <PlanAndPricing />
-      {/*Plan And Pricing */}
+      {/*discover desire */}
+      <DiscoverDesire />
+      {/*discover desire */}
 
       {/*Review And Testimonial */}
       <ReviewOrTestimonial />
