@@ -14,6 +14,8 @@ interface BodyResponse {
   email: string;
   subject: string;
   message: string;
+
+  // something else
 }
 
 interface MailInfo {
